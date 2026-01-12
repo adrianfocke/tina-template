@@ -11,7 +11,7 @@ body: ''
 seo: {}
 name: Home
 seo_de:
-  title: Start
+  title: Startseite
   metaDescription: >-
     Ich bin Webdeveloper und hier findest du alle Infos zu mir und was ich
     mache.
@@ -53,10 +53,7 @@ blocks:
       text_de: >-
         Hi, mein Name ist Adrian. Ich bin Developer und Digital Consultant in
         Wien. Durch meine Arbeit kann ich Menschen digital erheben und das macht
-        mich glücklich. Außerdem mache ich noch einige andere Dinge: mit meinen
-        Händen wende ich Massagetechniken an, mit meinem Körper unterrichte ich
-        Yoga und mit meiner Präsenz halte ich unterschiedliche Formate zum Thema
-        Männlichkeit und Feminismus.
+        mich glücklich.
       text_en: ''
     settings:
       hasContainer: true
@@ -67,104 +64,149 @@ blocks:
       paddingY: ''
     _template: Text
   - content:
-      text_de: 'Meine Mission:'
-    settings:
-      hasContainer: true
-      textSize: ''
-      marginBottom: '5'
-      paddingX: '4'
-    _template: Heading
-  - content:
       text_de: >-
-        Leisen Stimmen Gehör geben, verstehenwollen, ehrlich sein, reisen, Räume
-        halten, Privilegien sehen und hinterfragen, Männer* in ihre Sanftheit
-        bringen, Yogi:nis unterstützen, Dir den Rücken stärken.
+        Außerdem mache ich noch einige andere Dinge: mit meinen Händen wende ich
+        Massagetechniken an, mit meinem Körper praktiziere ich Yoga und mit
+        meiner Präsenz halte ich unterschiedliche Formate zum Thema Männlichkeit
+        und Feminismus.
     settings:
       hasContainer: true
+      marginX: '4'
+      marginY: ''
       marginBottom: '9'
-      paddingX: '4'
     _template: Text
   - content:
-      text_de: 'Stories that I tell:'
+      items:
+        - blocks:
+            - content:
+                text_de: 'Meine Mission:'
+              settings:
+                marginBottom: '4'
+                paddingX: '4'
+              _template: Heading
+            - content:
+                blocks:
+                  - content:
+                      text_de: >-
+                        Leisen Stimmen Gehör geben, verstehenwollen, ehrlich
+                        sein, reisen, Räume halten, Privilegien sehen und
+                        hinterfragen, Männer* in ihre Sanftheit bringen,
+                        Yogi:nis unterstützen, Dir den Rücken stärken.
+                    settings:
+                      textSize: '8'
+                      font: serif
+                      paddingX: '4'
+                      paddingY: '4'
+                    _template: Text
+              settings:
+                aspectRatio_initial: 3/4
+                aspectRatio_xs: 3/4
+                aspectRatio_sm: 3/4
+                aspectRatio_md: 3/4
+                aspectRatio_lg: 3/4
+                aspectRatio_xl: 3/4
+              _template: Image
+        - blocks:
+            - content:
+                text_de: 'Stories that I tell:'
+              settings:
+                marginBottom: '4'
+                paddingX: '4'
+              _template: Heading
+            - content:
+                blocks:
+                  - content:
+                      image: /uploads/coco.png
+                      blocks:
+                        - content:
+                            text_de: Om Shanti Webseite
+                          settings:
+                            align: center
+                            textColor: white
+                            marginX: '4'
+                          _template: Heading
+                        - content:
+                            text_de: >-
+                              Trust the Journey: Eine maßgeschneiderte Seite für
+                              Coco.
+                          settings:
+                            align: center
+                            textColor: white
+                            marginX: '4'
+                            marginY: ''
+                            marginBottom: ''
+                            paddingX: '4'
+                            paddingY: '2'
+                          _template: Text
+                        - link: /stories/coco
+                          content:
+                            text_de: Zu ihrer Story
+                          settings:
+                            align: center
+                            paddingX: '4'
+                          _template: Button
+                    settings:
+                      aspectRatio_initial: 3/4
+                      aspectRatio_xs: 3/4
+                      aspectRatio_sm: 3/4
+                      aspectRatio_md: 3/4
+                      aspectRatio_lg: 3/4
+                      aspectRatio_xl: 3/4
+                      blocksPosition: center
+                    _template: Image
+                  - content:
+                      image: /uploads/hanna-min.png
+                      blocks:
+                        - content:
+                            text_de: 'Atme ein, atme aus.'
+                          settings:
+                            align: center
+                            textColor: white
+                            marginX: '4'
+                          _template: Heading
+                        - content:
+                            text_de: Hanna startet durch mit ihrer neuen Webseite.
+                          settings:
+                            align: center
+                            textColor: white
+                            paddingX: '4'
+                            paddingY: '2'
+                          _template: Text
+                        - link: /stories/hanna
+                          content:
+                            text_de: Zu ihrer Story
+                          settings:
+                            align: center
+                            paddingX: '4'
+                          _template: Button
+                    settings:
+                      aspectRatio_initial: 3/4
+                      aspectRatio_xs: 3/4
+                      aspectRatio_sm: 3/4
+                      aspectRatio_md: 3/4
+                      aspectRatio_lg: 3/4
+                      aspectRatio_xl: 3/4
+                      blocksPosition: center
+                    _template: Image
+              settings:
+                nextSlideTimeout: '8'
+                hasControls: true
+              _template: Slideshow
     settings:
       hasContainer: true
-      marginY: '5'
-      paddingX: '4'
-    _template: Heading
-  - content:
-      blocks:
-        - content:
-            image: /uploads/coco.png
-            blocks:
-              - content:
-                  text_de: |
-                    Om Shanti Webseite
-                settings:
-                  align: center
-                  textColor: white
-                _template: Heading
-              - content:
-                  text_de: 'Trust the Journey: Eine maßgeschneiderte Seite für Coco.'
-                settings:
-                  align: center
-                  textColor: white
-                  marginY: ''
-                  marginBottom: ''
-                  paddingY: '4'
-                _template: Text
-              - content:
-                  text_de: Zu ihrer Story
-                settings:
-                  align: center
-                _template: Button
-          settings:
-            blocksPosition: center
-          _template: Image
-        - content:
-            image: /uploads/hanna-min.png
-            blocks:
-              - content:
-                  text_de: 'Atme ein, atme aus'
-                _template: Heading
-              - content:
-                  text_de: |-
-                    Hanna startet durch mit ihrer neuen Webseite.
-                                                text_en: Hanna is taking off with her new website
-                _template: Text
-              - content:
-                  text_de: Zu ihrer Story
-                _template: Button
-          settings:
-            blocksPosition: center
-          _template: Image
-        - content:
-            image: /uploads/valerie.jpg
-            blocks:
-              - content:
-                  text_de: Vorhang auf!
-                _template: Heading
-              - content:
-                  text_de: >-
-                    Die Webseite von Valerie Voigt zeigt sich in ganz neuem
-                    Glanz.
-                _template: Text
-              - content:
-                  text_de: Zu ihrer Story
-                _template: Button
-          settings:
-            blocksPosition: center
-          _template: Image
-    settings:
-      hasControls: true
-      marginY: '5'
-    _template: Slideshow
+      gap: '6'
+      columns_initial: '1'
+      columns_xs: '1'
+      columns_sm: '1'
+      marginBottom: '9'
+    _template: Grid
   - content:
       text_de: 'Meine Pakete:'
       text_en: 'My packages:'
     settings:
       hasContainer: true
       font: serif
-      marginBottom: '5'
+      marginBottom: '4'
       paddingX: '4'
       paddingY: ''
     _template: Heading
@@ -315,13 +357,5 @@ blocks:
       marginBottom: '9'
       paddingX: '4'
     _template: Grid
-  - content:
-      text_de: 'Dein Mehrwert:'
-      text_en: 'Your bonus:'
-    settings:
-      marginBottom: '5'
-      paddingX: '4'
-      extraPaddingWhenInGrid: true
-    _template: Heading
 ---
 

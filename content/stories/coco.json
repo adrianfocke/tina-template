@@ -1,7 +1,6 @@
 {
   "claim_de": "Meine Lebensaufgabe ist es, meine Peers zu erheben. Ich gestalte Yoga-Einheiten, die auf allen Ebenen wirken – samt Bhakti,  Soundhealings und in einer lebendigen Community.",
   "claim_en": "My life's work is to empower my peers. I design yoga sessions that work on all levels – including bhakti, sound healing and withina vibrant community.",
-  "image": "/uploads/coco.png",
   "name": "Coco",
   "seo_de": {
     "title": "Coco's Story"
@@ -9,6 +8,7 @@
   "seo_en": {
     "title": "Coco's Story"
   },
+  "image": "/uploads/coco.png",
   "blocks": [
     {
       "content": {
@@ -39,7 +39,7 @@
         "image": "/uploads/coco.png"
       },
       "settings": {
-        "marginBottom": "7"
+        "marginBottom": ""
       },
       "_template": "Image"
     },
@@ -51,7 +51,9 @@
       "settings": {
         "hasContainer": true,
         "textSize": "6",
-        "marginBottom": "6"
+        "marginY": "5",
+        "marginBottom": "",
+        "paddingX": "4"
       },
       "_template": "Text"
     },
@@ -63,7 +65,8 @@
       "settings": {
         "hasContainer": true,
         "textSize": "6",
-        "marginBottom": "7"
+        "marginBottom": "9",
+        "paddingX": "4"
       },
       "_template": "Text"
     },
@@ -73,7 +76,8 @@
         "text_en": "Om Shanti Website"
       },
       "settings": {
-        "align": "center"
+        "align": "center",
+        "paddingX": "4"
       },
       "_template": "Heading"
     },
@@ -84,6 +88,7 @@
       },
       "settings": {
         "align": "center",
+        "paddingX": "4",
         "paddingY": "2"
       },
       "_template": "Text"
@@ -95,7 +100,9 @@
         "text_en": "yogamitcoco.at"
       },
       "settings": {
-        "align": "center"
+        "align": "center",
+        "marginBottom": "9",
+        "paddingX": "4"
       },
       "_template": "Text"
     }
