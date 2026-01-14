@@ -3,7 +3,6 @@ import { cookies } from "next/headers";
 import client from "../../tina/__generated__/client";
 import ClientPage from "./client-page";
 import {
-  findIntlValue,
   type Language,
 } from "../../tina/templating/special-fields";
 import type { GenerateMetadataProps } from "../../tina/types";

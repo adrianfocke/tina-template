@@ -10,7 +10,6 @@ import { LanguageContext } from "../../utils/context/language";
 import { Box, Grid } from "@radix-ui/themes";
 import Image from "../../components/Image/Image";
 import {
-  aspectRatioMap,
   type AspectRatio,
 } from "../../tina/templating/granular-fields";
 
