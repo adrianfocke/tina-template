@@ -36,7 +36,9 @@ export const aspectRatios = [
   "2/1",
 ] as const;
 
-export const aspectRatioMap: Record<(typeof aspectRatios)[number], number> = {
+export type AspectRatio = (typeof aspectRatios)[number];
+
+export const aspectRatioMap: Record<AspectRatio, number> = {
   "16/9": 16 / 9,
   "4/3": 4 / 3,
   "1/1": 1,

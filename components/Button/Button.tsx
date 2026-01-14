@@ -1,22 +1,41 @@
 import { Box, Button } from "@radix-ui/themes";
 import type { PageBlocksButton } from "../../tina/__generated__/types";
-import { useContext } from "react";
+import { useContext, useMemo } from "react";
 import { LanguageContext } from "../../utils/context/language";
 import { tinaField } from "tinacms/dist/react";
 import { findIntlValue } from "../../tina/templating/special-fields";
 import Link from "next/link";
 
-export default function Component(props: PageBlocksButton) {
+function Component(props: PageBlocksButton) {
   const language = useContext(LanguageContext);
   const text = findIntlValue(language, "text");
+
+  const variant = (props.settings?.variant as any) ?? "solid";
+  const isSolid = variant === "solid";
+
+  const randomButtonImage = useMemo(() => {
+    if (!isSolid) return null;
+    const randomNum = Math.floor(Math.random() * 9) + 1;
+    return `/uploads/buttons/button${randomNum}.png`;
+  }, [isSolid]);
 
   const content = (
     <Button
       radius={(props.settings?.radius as any) ?? "full"}
       data-tina-field={tinaField(props.content ?? props)}
-      variant={(props.settings?.variant as any) ?? "solid"}
-      size={(props.settings?.textSize as any) ?? "2"}
-      style={{ cursor: "pointer" }}
+      variant={variant}
+      size={(props.settings?.textSize as any) ?? "3"}
+      style={{
+        cursor: "pointer",
+        ...(isSolid &&
+          randomButtonImage && {
+            border: "1px solid var(--accent-7)",
+            backgroundImage: `url('${randomButtonImage}')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }),
+      }}
     >
       {props.content?.[text] || "Add your text here"}
     </Button>
@@ -37,3 +56,5 @@ export default function Component(props: PageBlocksButton) {
     </Box>
   );
 }
+
+export default Component;

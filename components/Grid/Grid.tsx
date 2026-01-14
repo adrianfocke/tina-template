@@ -11,9 +11,20 @@ export default function Component(props: PageBlocksGrid) {
     <Grid
       columns={{
         initial: props.settings?.columns_initial || "1",
+        xs: props.settings?.columns_xs || "1",
+        sm: props.settings?.columns_sm || "1",
         md: props.settings?.columns_md || "2",
+        lg: props.settings?.columns_lg || "2",
+        xl: props.settings?.columns_xl || "2",
       }}
-      gap={props.settings?.gap ?? "0"}
+      gap={{
+        initial: props.settings?.gap_initial || "0",
+        xs: props.settings?.gap_xs || "0",
+        sm: props.settings?.gap_sm || "0",
+        md: props.settings?.gap_md || "0",
+        lg: props.settings?.gap_lg || "0",
+        xl: props.settings?.gap_xl || "0",
+      }}
     >
       {props.content?.items?.map((item, i) => (
         <Box key={i}>

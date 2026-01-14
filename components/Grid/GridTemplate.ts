@@ -68,7 +68,7 @@ export default {
       fields: [
         IsCardField,
         HasContainerField,
-        GapField,
+        ...createResponsiveField(GapField),
         ...createResponsiveField(ColumnsField),
         MarginXField,
         MarginYField,

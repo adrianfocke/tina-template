@@ -16,13 +16,11 @@ blocks:
   - content:
       text_de: >-
         Ich bezeichne mich selbst als Aktivist und stehe für das was mir wichtig
-        ist ein. In all den Dingen, die ich tue, möchte ich mich immer auch
-        fragen: WARUM mache ich das eigentlich? WAS daran erfüllt mich? WODURCH
-        profitieren dann die Menschen um mich herum? Ich din dann am
-        glücklichsten wenn ich Dinge tue die nicht nur mich verbessern; generell
-        bin ich ein Mensch, der Dinge entweder mit Nachdruck tut oder lieber
-        gleich bleiben lässt. Außerdem frage ich mich bei all den Dingen, die
-        ich mache, immer WARUM ich diese überhaupt mache? 
+        ist ein. In all jenen Dingen, die ich tue, möchte ich mich immer fragen:
+        Wozu mache ich das eigentlich? Was daran erfüllt mich? Profitieren
+        dadurch auch die Menschen um mich herum? Wenn ich diese Fragen
+        beantworten kann, fange ich an zu handeln. Ansonsten lasse ich es lieber
+        ganz bleiben.
     settings:
       hasContainer: true
       marginY: '5'
@@ -51,7 +49,10 @@ blocks:
               settings:
                 paddingY: '4'
               _template: Text
-            - _template: Button
+            - settings:
+                variant: surface
+                textSize: '3'
+              _template: Button
         - blocks:
             - content:
                 image: /uploads/signal-2023-12-20-102115.jpeg
@@ -80,7 +81,10 @@ blocks:
               settings:
                 paddingY: '4'
               _template: Text
-            - _template: Button
+            - settings:
+                variant: surface
+                textSize: '3'
+              _template: Button
         - blocks:
             - content:
                 image: /uploads/DSC07821.JPG
@@ -109,7 +113,10 @@ blocks:
               settings:
                 paddingY: '4'
               _template: Text
-            - _template: Button
+            - settings:
+                variant: surface
+                textSize: '3'
+              _template: Button
         - blocks:
             - content:
                 image: /uploads/annie-spratt-oQfSHQ2Uaic-unsplash.jpg
@@ -141,7 +148,10 @@ blocks:
               settings:
                 paddingY: '4'
               _template: Text
-            - _template: Button
+            - settings:
+                variant: surface
+                textSize: '3'
+              _template: Button
         - blocks:
             - content:
                 image: >-
@@ -156,9 +166,14 @@ blocks:
               _template: Image
         - {}
     settings:
-      hasContainer: true
-      gap: '6'
-      paddingX: '4'
+      hasContainer: false
+      gap_initial: '4'
+      gap_xs: '4'
+      gap_sm: '4'
+      gap_md: '4'
+      gap_lg: '4'
+      gap_xl: '4'
+      paddingX: ''
     _template: Grid
 ---
 

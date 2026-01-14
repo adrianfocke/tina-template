@@ -9,6 +9,10 @@ import type { Language } from "../../tina/templating/special-fields";
 import { LanguageContext } from "../../utils/context/language";
 import { Box, Grid } from "@radix-ui/themes";
 import Image from "../../components/Image/Image";
+import {
+  aspectRatioMap,
+  type AspectRatio,
+} from "../../tina/templating/granular-fields";
 
 type ClientPageProps = {
   query: string;
@@ -41,14 +45,26 @@ export default function ClientPage(props: ClientPageProps) {
         <Grid
           columns={{
             initial: "1",
+            sm: "1",
+            xs: "1",
+            md: "3",
+            lg: "3",
+            xl: "3",
           }}
-          gap={"4"}
         >
           {pages.map((item, i) => (
             <Box key={i}>
               <Image
                 link={"/stories/" + item?.node?._sys.filename}
                 content={{ image: item?.node?.image }}
+                settings={{
+                  aspectRatio_initial: "1/1" as AspectRatio,
+                  aspectRatio_xs: "1/1" as AspectRatio,
+                  aspectRatio_sm: "1/1" as AspectRatio,
+                  aspectRatio_md: "1/1" as AspectRatio,
+                  aspectRatio_lg: "1/1" as AspectRatio,
+                  aspectRatio_xl: "1/1" as AspectRatio,
+                }}
               />
             </Box>
           ))}
