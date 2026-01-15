@@ -35,9 +35,11 @@ export async function generateMetadata({
   const pageTitle =
     page.data.story?.[seo]?.title ?? title[0].toUpperCase() + title.slice(1);
 
+  const description = page.data.story?.[seo]?.metaDescription;
+
   return {
     title: `${pageTitle} | ${config.data.config?.applicationName}`,
-    description: page.data.story?.[seo]?.metaDescription,
+    description: description,
     applicationName: config.data.config?.applicationName,
     authors: config.data.config?.authors?.map((author) => ({
       name: author?.name || "",

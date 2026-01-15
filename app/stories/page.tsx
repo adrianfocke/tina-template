@@ -18,7 +18,7 @@ export async function generateMetadata({
 
   return {
     title: `${title} | ${config.data.config?.applicationName}`,
-    description: "",
+    description: config.data.config?.applicationName || "Stories",
     applicationName: config.data.config?.applicationName,
     authors: config.data.config?.authors?.map((author) => ({
       name: author?.name || "",
