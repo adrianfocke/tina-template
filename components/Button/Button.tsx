@@ -16,7 +16,7 @@ function Component(props: PageBlocksButton) {
   const randomButtonImage = useMemo(() => {
     if (!isSolid) return null;
     const randomNum = Math.floor(Math.random() * 9) + 1;
-    return `/uploads/button${randomNum}.png`;
+    return `/uploads/buttons/button${randomNum}.png`;
   }, [isSolid]);
 
   const content = (
