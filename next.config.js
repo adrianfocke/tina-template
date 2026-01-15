@@ -18,7 +18,7 @@ module.exports = {
       },
       {
         protocol: "https",
-        hostname: "**.vercel.com",
+        hostname: "*.vercel.com",
         port: "",
         search: "",
       },
