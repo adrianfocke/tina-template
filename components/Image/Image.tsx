@@ -4,19 +4,27 @@ import { aspectRatioMap } from "../../tina/templating/granular-fields";
 import { tinaField } from "tinacms/dist/react";
 import type { PageBlocksImage } from "../../tina/__generated__/types";
 import useBreakpoint from "../../utils/hook/useBreakpoint";
+import { useBackgroundImage } from "../../utils/hook/useBackgroundImage";
 import { renderBlocks } from "../../tina/templating/utils";
 import Link from "next/link";
 import { findBreakpointValue } from "../../tina/templating/special-fields";
+import { useState } from "react";
 
 export default function Component(props: PageBlocksImage) {
   const breakpoint = useBreakpoint();
   const aspectRatio = findBreakpointValue(breakpoint, "aspectRatio");
+  const [isHovered, setIsHovered] = useState(false);
+  const backgroundImage = useBackgroundImage(isHovered);
 
   const content = (
     <AspectRatio
+      onMouseEnter={() => props.settings?.hasHoverEffect && setIsHovered(true)}
+      onMouseLeave={() => props.settings?.hasHoverEffect && setIsHovered(false)}
       data-tina-field={tinaField(props.content ?? props)}
       ratio={aspectRatioMap[props.settings?.[aspectRatio]] ?? 16 / 9}
-      style={{ overflow: "hidden" }}
+      style={{
+        overflow: "hidden",
+      }}
     >
       <NextImage
         src={
@@ -36,11 +44,27 @@ export default function Component(props: PageBlocksImage) {
           objectFit: "cover",
         }}
       />
+      {backgroundImage && props.settings?.hasHoverEffect && (
+        <div
+          style={{
+            position: "absolute",
+            inset: 0,
+            backgroundImage: `url('${backgroundImage}')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            opacity: 0.2,
+            zIndex: 5,
+          }}
+        />
+      )}
       <Flex
         direction={"column"}
         position="absolute"
         inset="0"
-        style={{ zIndex: 1 }}
+        style={{
+          zIndex: 10,
+        }}
         justify={(props.settings?.blocksPosition as any) || "start"}
       >
         {props.content?.blocks?.map((block, j) => {

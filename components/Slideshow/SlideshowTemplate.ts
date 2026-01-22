@@ -53,7 +53,7 @@ export default {
           name: "nextSlideTimeout",
           label: "Next Slide in seconds",
           type: "string",
-          options: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"],
+          options: ["4", "5", "6", "7", "8", "9", "10"],
         },
         { name: "hasControls", label: "Show Controls", type: "boolean" },
         MarginXField,

@@ -2,16 +2,12 @@
 import { useTina } from "tinacms/dist/react";
 import Footer from "../../components/Footer/Footer";
 import Navigation from "../../components/Navigation/Navigation";
-import type {
-  StoryAndNavConnectionQuery,
-} from "../../tina/__generated__/types";
+import type { StoryAndNavConnectionQuery } from "../../tina/__generated__/types";
 import type { Language } from "../../tina/templating/special-fields";
 import { LanguageContext } from "../../utils/context/language";
 import { Box, Grid } from "@radix-ui/themes";
 import Image from "../../components/Image/Image";
-import {
-  type AspectRatio,
-} from "../../tina/templating/granular-fields";
+import { type AspectRatio } from "../../tina/templating/granular-fields";
 
 type ClientPageProps = {
   query: string;
@@ -32,7 +28,7 @@ export default function ClientPage(props: ClientPageProps) {
   const pages = data.storyConnection.edges?.sort(
     (a, b) =>
       new Date(b!.node?._sys.filename!).getTime() -
-      new Date(a!.node?._sys.filename!).getTime()
+      new Date(a!.node?._sys.filename!).getTime(),
   );
 
   console.log("Pages:", pages);
@@ -55,8 +51,27 @@ export default function ClientPage(props: ClientPageProps) {
             <Box key={i}>
               <Image
                 link={"/stories/" + item?.node?._sys.filename}
-                content={{ image: item?.node?.image }}
+                content={{
+                  image: item?.node?.image,
+                  blocks: [
+                    {
+                      __typename: "PageBlocksImageContentBlocksText",
+                      content: {
+                        text_de: item?.node?.name,
+                        text_en: item?.node?.name,
+                      },
+                      settings: {
+                        align: "center",
+                        textColor: "white",
+                        font: "serif",
+                        textSize: "9",
+                      },
+                    },
+                  ],
+                }}
                 settings={{
+                  hasHoverEffect: true,
+                  blocksPosition: "center",
                   aspectRatio_initial: "1/1" as AspectRatio,
                   aspectRatio_xs: "1/1" as AspectRatio,
                   aspectRatio_sm: "1/1" as AspectRatio,

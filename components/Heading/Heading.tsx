@@ -34,6 +34,7 @@ export default function Component(props: PageBlocksHeading) {
 
   const box = (
     <Box
+      id={props.settings?.id || undefined}
       mx={props.settings?.marginX ?? "0"}
       my={props.settings?.marginY ?? "0"}
       mb={props.settings?.marginBottom ?? "inherit"}

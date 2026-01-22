@@ -1,7 +1,8 @@
 import { Box, Button } from "@radix-ui/themes";
 import type { PageBlocksButton } from "../../tina/__generated__/types";
-import { useContext, useMemo } from "react";
+import { useContext } from "react";
 import { LanguageContext } from "../../utils/context/language";
+import { useBackgroundImage } from "../../utils/hook/useBackgroundImage";
 import { tinaField } from "tinacms/dist/react";
 import { findIntlValue } from "../../tina/templating/special-fields";
 import Link from "next/link";
@@ -13,11 +14,7 @@ function Component(props: PageBlocksButton) {
   const variant = (props.settings?.variant as any) ?? "solid";
   const isSolid = variant === "solid";
 
-  const randomButtonImage = useMemo(() => {
-    if (!isSolid) return null;
-    const randomNum = Math.floor(Math.random() * 9) + 1;
-    return `/uploads/buttons/button${randomNum}.png`;
-  }, [isSolid]);
+  const randomButtonImage = useBackgroundImage(isSolid);
 
   const content = (
     <Button
@@ -29,7 +26,7 @@ function Component(props: PageBlocksButton) {
         cursor: "pointer",
         ...(isSolid &&
           randomButtonImage && {
-            border: "1px solid var(--accent-7)",
+            border: "2px solid var(--accent-7)",
             backgroundImage: `url('${randomButtonImage}')`,
             backgroundSize: "cover",
             backgroundPosition: "center",

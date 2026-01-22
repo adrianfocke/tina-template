@@ -16,6 +16,7 @@
         "text_en": "My life's work is to uplift my peers. I design yoga sessions that work on all levels – including bhakti, sound healing and a vibrant community."
       },
       "settings": {
+        "hasContainer": true,
         "textSize": "9",
         "font": "serif",
         "paddingX": "4",
@@ -25,10 +26,12 @@
     },
     {
       "content": {
-        "text_de": "– Coco, Yoga Teacher, Soundhealerin und Community Lead in Wien",
-        "text_en": "– Coco, Yoga Teacher, Soundhealerin and Community Lead in Wien"
+        "text_de": "Coco, Yoga Teacher, Soundhealerin und Community Lead in Wien",
+        "text_en": "Coco, Yoga Teacher, Soundhealerin and Community Lead in Wien"
       },
       "settings": {
+        "hasContainer": true,
+        "textSize": "",
         "marginBottom": "7",
         "paddingX": "4"
       },
@@ -77,21 +80,10 @@
       },
       "settings": {
         "align": "center",
+        "textSize": "8",
         "paddingX": "4"
       },
       "_template": "Heading"
-    },
-    {
-      "content": {
-        "text_de": "Hier findest Du ihre Webseite:",
-        "text_en": "Find her website here:"
-      },
-      "settings": {
-        "align": "center",
-        "paddingX": "4",
-        "paddingY": "2"
-      },
-      "_template": "Text"
     },
     {
       "link": "https://www.yogamitcoco.at/",
@@ -105,6 +97,55 @@
         "paddingX": "4"
       },
       "_template": "Text"
+    },
+    {
+      "content": {
+        "items": [
+          {
+            "blocks": [
+              {
+                "content": {
+                  "text_de": "Coco hat das Paket \"Bytes only\" gewählt. Vielleicht ist das auch Dein passendes Paket?"
+                },
+                "settings": {
+                  "align": ""
+                },
+                "_template": "Text"
+              }
+            ]
+          },
+          {
+            "blocks": [
+              {
+                "link": "/#packages",
+                "content": {
+                  "text_de": "Pakete ansehen"
+                },
+                "settings": {
+                  "align": "center"
+                },
+                "_template": "Button"
+              }
+            ]
+          }
+        ]
+      },
+      "settings": {
+        "isCard": false,
+        "gap_initial": "4",
+        "gap_xs": "4",
+        "gap_sm": "4",
+        "gap_md": "4",
+        "gap_lg": "4",
+        "gap_xl": "4",
+        "columns_initial": "2",
+        "columns_xs": "2",
+        "columns_sm": "2",
+        "columns_md": "2",
+        "marginBottom": "9",
+        "paddingX": "4"
+      },
+      "_template": "Grid"
     }
   ]
 }

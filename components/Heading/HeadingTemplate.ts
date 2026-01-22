@@ -12,6 +12,7 @@ import {
   TextColorField,
   ExtraMarginBottomField,
   ExtraPaddingWhenInGridField,
+  IDField,
 } from "../../tina/templating/granular-fields";
 
 export default {
@@ -36,6 +37,7 @@ export default {
       label: "Settings",
       type: "object",
       fields: [
+        IDField,
         HasContainerField,
         AlignField,
         TextSizeField,

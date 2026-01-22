@@ -63,6 +63,12 @@ export const AlignField: Template["fields"][number] = {
   options: ["left", "center", "right"],
 };
 
+export const HasHoverEffectField: Template["fields"][number] = {
+  name: "hasHoverEffect",
+  label: "Enable Hover Effect",
+  type: "boolean",
+};
+
 export const MarginXField: Template["fields"][number] = {
   name: "marginX",
   label: "Horizontal Margin Size",
@@ -196,6 +202,13 @@ export const HasContainerField: Template["fields"][number] = {
   name: "hasContainer",
   label: "Wrap Component in Container",
   type: "boolean",
+};
+
+export const IDField: Template["fields"][number] = {
+  name: "id",
+  label: "ID",
+  type: "string",
+  description: "Add an ID to this component for linking or accessibility",
 };
 
 export const FontField: Template["fields"][number] = {

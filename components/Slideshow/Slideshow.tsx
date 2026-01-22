@@ -10,7 +10,7 @@ export default function Component(props: PageBlocksSlideshow) {
   const breakpoint = useBreakpoint();
   const numberOfSlidesShown = findBreakpointValue(
     breakpoint,
-    "numberOfSlidesShown"
+    "numberOfSlidesShown",
   );
 
   const { slideshow, scrollToSlide, activeSlide } = useSlideshow({
@@ -59,7 +59,7 @@ export default function Component(props: PageBlocksSlideshow) {
           position={"absolute"}
           left={"50%"}
           style={{
-            zIndex: 2,
+            zIndex: 100,
             borderRadius: "9999px",
             transform: "translateX(-50%)",
             backgroundColor: "var(--gray-a1)",
