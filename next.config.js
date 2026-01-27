@@ -4,6 +4,7 @@ const project = require("./project.js");
 /** @type {import('next').NextConfig} */
 
 module.exports = {
+  output: "standalone",
   turbopack: {
     root: path.join(__dirname),
   },
