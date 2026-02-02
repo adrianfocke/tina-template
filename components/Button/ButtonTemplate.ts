@@ -11,6 +11,7 @@ import {
   RadiusField,
   TextColorField,
   ExtraMarginBottomField,
+  FontField,
 } from "../../tina/templating/granular-fields";
 
 export default {
@@ -48,6 +49,7 @@ export default {
           options: ["1", "2", "3"],
         },
         TextColorField,
+        FontField,
         AlignField,
         MarginXField,
         MarginYField,

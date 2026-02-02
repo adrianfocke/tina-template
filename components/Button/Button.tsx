@@ -18,6 +18,7 @@ function Component(props: PageBlocksButton) {
 
   const content = (
     <Button
+      className={props.settings?.font as any}
       radius={(props.settings?.radius as any) ?? "full"}
       data-tina-field={tinaField(props.content ?? props)}
       variant={variant}
