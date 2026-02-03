@@ -42,7 +42,7 @@ export default function Component(props: PageBlocksText) {
     <Box
       mx={props.settings?.marginX ?? "0"}
       my={props.settings?.marginY ?? "0"}
-      mb={props.settings?.marginBottom ?? "inherit"}
+      mb={props.settings?.marginBottom ?? "5"}
       px={props.settings?.paddingX ?? "0"}
       py={props.settings?.paddingY ?? "0"}
       style={{
