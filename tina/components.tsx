@@ -1,4 +1,4 @@
-import type { Components } from "tinacms/dist/rich-text";
+import { type Components } from "tinacms/dist/rich-text";
 import Button from "../components/Button/Button";
 import ButtonTemplate from "../components/Button/ButtonTemplate";
 import Form from "../components/Form/Form";
@@ -12,9 +12,12 @@ import Slideshow from "../components/Slideshow/Slideshow";
 import SlideshowTemplate from "../components/Slideshow/SlideshowTemplate";
 import Text from "../components/Text/Text";
 import TextTemplate from "../components/Text/TextTemplate";
+import CallToActionTemplate from "../components/CallToAction/CallToActionTemplate";
+import CallToAction from "../components/CallToAction/CallToAction";
 
 export const templates = [
   ButtonTemplate,
+  CallToActionTemplate,
   GridTemplate,
   HeadingTemplate,
   ImageTemplate,
@@ -25,6 +28,9 @@ export const templates = [
 export default {
   Button: (props: any) => {
     return <Button {...props} />;
+  },
+  Call_To_Action: (props: any) => {
+    return <CallToAction {...props} />;
   },
   Form: (props: any) => {
     return <Form {...props} />;

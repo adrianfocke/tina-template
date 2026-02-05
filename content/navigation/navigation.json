@@ -25,6 +25,9 @@
     "content": {
       "text_de": "Start",
       "text_en": "Start"
+    },
+    "settings": {
+      "marginBottom": "0"
     }
   },
   "links": [
@@ -33,6 +36,9 @@
       "content": {
         "text_de": "Über Mich",
         "text_en": "About Me"
+      },
+      "settings": {
+        "marginBottom": "0"
       }
     },
     {
@@ -40,6 +46,9 @@
       "content": {
         "text_de": "Stories",
         "text_en": "Stories"
+      },
+      "settings": {
+        "marginBottom": "0"
       }
     }
   ],

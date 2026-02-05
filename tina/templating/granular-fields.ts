@@ -1,6 +1,7 @@
 import type { Template } from "tinacms";
 
 const radixUnitsPositive = [
+  "0",
   "1",
   "2",
   "3",

@@ -83,6 +83,12 @@
         "paddingX": "4"
       },
       "_template": "Text"
+    },
+    {
+      "content": {
+        "text_de": "Adrian"
+      },
+      "_template": "Call_To_Action"
     }
   ]
 }
