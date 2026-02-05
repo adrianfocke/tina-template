@@ -86,7 +86,13 @@
     },
     {
       "content": {
-        "text_de": "Adrian"
+        "heading_de": "Überzeugt?",
+        "text_de": "Coco hat das Paket \"Freiheit\" gebucht, jeglichen Online-Stress hat sie damit mir überlassen. Ich helfe auch dir beim Erstellen deiner digitalen Präsenz und nehme dir Einiges an Arbeit ab.",
+        "buttonText_de": "Termin buchen"
+      },
+      "settings": {
+        "hasContainer": true,
+        "paddingX": "4"
       },
       "_template": "Call_To_Action"
     }

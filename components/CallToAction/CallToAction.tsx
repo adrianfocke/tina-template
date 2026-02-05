@@ -1,36 +1,52 @@
-import { Heading, Box, Container } from "@radix-ui/themes";
+import { Box, Card, Container, Flex } from "@radix-ui/themes";
 import { tinaField } from "tinacms/dist/react";
-import { useContext } from "react";
-import { LanguageContext } from "../../utils/context/language";
-import { findIntlValue } from "../../tina/templating/special-fields";
-import { colorMap } from "../../tina/templating/granular-fields";
-import { radixSizeMinusOne } from "../../tina/templating/utils";
 import type { PageBlocksCall_To_Action } from "../../tina/__generated__/types";
+import Heading from "../Heading/Heading";
+import Button from "../Button/Button";
+import Text from "../Text/Text";
 
 export default function Component(props: PageBlocksCall_To_Action) {
-  const language = useContext(LanguageContext);
-  const text = findIntlValue(language, "text");
-  console.log("CallToAction props:", props);
-
   const content = (
-    <Heading
-      className={
-        (props.settings?.font as any) ? (props.settings?.font as any) : "serif"
-      }
-      data-tina-field={tinaField(props.content ?? props)}
-      align={(props.settings?.align as any) ?? "left"}
-      size={
-        props.settings?.textSize
-          ? {
-              initial: radixSizeMinusOne(props.settings?.textSize) as any,
-              md: props.settings?.textSize as any,
-            }
-          : "9"
-      }
-      style={{ color: colorMap[props.settings?.textColor as any] }}
+    <Card
+      style={{
+        background:
+          "radial-gradient(circle,rgba(237, 236, 235, 1) 0%, rgba(62, 99, 221, 1) 100%)",
+      }}
     >
-      {props.content?.[text] || "Add your heading here"}
-    </Heading>
+      <Flex
+        direction={{ initial: "column", md: "row" }}
+        p={"4"}
+        gap="4"
+        align="center"
+        data-tina-field={tinaField(props.content ?? props)}
+      >
+        <Box width={{ initial: "100%", md: "75%" }}>
+          <Heading
+            content={{
+              text_de: props.content?.heading_de,
+              text_en: props.content?.heading_en,
+            }}
+            settings={{ marginBottom: "4" }}
+          />
+          <Text
+            content={{
+              text_de: props.content?.text_de,
+              text_en: props.content?.text_en,
+            }}
+            settings={{ marginBottom: "1" }}
+          />
+        </Box>
+        <Box width={{ initial: "100%", md: "25%" }}>
+          <Button
+            content={{
+              text_de: props.content?.buttonText_de,
+              text_en: props.content?.buttonText_en,
+            }}
+            settings={{ align: "center" }}
+          />
+        </Box>
+      </Flex>
+    </Card>
   );
 
   const box = (

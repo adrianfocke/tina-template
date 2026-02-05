@@ -17,7 +17,6 @@ export const findComponentByTypeName = (typeName: string) => {
     );
     return undefined;
   }
-  console.log("Extracted component name:", componentName);
   return componentName;
 };
 
@@ -25,7 +24,6 @@ export const renderBlocks = (block: any, key: number) => {
   if (!block?.__typename) return null;
 
   const componentName = findComponentByTypeName((block as any).__typename);
-  console.log("Rendering block of type:", componentName);
   const Component = components[componentName];
 
   if (!Component) return <p key={key}>{componentName}</p>;

@@ -8,6 +8,7 @@ import { renderBlocks } from "../../tina/templating/utils";
 import Link from "next/link";
 import { findBreakpointValue } from "../../tina/templating/special-fields";
 import { useState } from "react";
+import Text from "../Text/Text";
 
 export default function Component(props: PageBlocksImage) {
   const breakpoint = useBreakpoint();
@@ -42,16 +43,6 @@ export default function Component(props: PageBlocksImage) {
           objectFit: "cover",
         }}
       />
-      {isHovered && props.settings?.hasHoverEffect && (
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background: `radial-gradient(ellipse at center, transparent 0%, rgba(59, 130, 246, 0.15) 60%, rgba(59, 130, 246, 0.3) 100%)`,
-            zIndex: 5,
-          }}
-        />
-      )}
       <Flex
         direction={"column"}
         position="absolute"
@@ -64,6 +55,27 @@ export default function Component(props: PageBlocksImage) {
         {props.content?.blocks?.map((block, j) => {
           return renderBlocks(block, j);
         })}
+        {isHovered && (
+          <Flex
+            align={"center"}
+            justify={"center"}
+            style={{
+              background: "#3E63DD",
+              position: "absolute",
+              textAlign: "center",
+              width: "100%",
+              height: "100%",
+            }}
+          >
+            <Text
+              content={{
+                text_de: "Klicken um die Story anzusehen",
+                text_en: "Click to view the story",
+              }}
+              settings={{ textColor: "white" }}
+            />
+          </Flex>
+        )}
       </Flex>
     </AspectRatio>
   );

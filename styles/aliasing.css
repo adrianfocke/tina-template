@@ -5,7 +5,10 @@
   --color-background: #fdfdfd;
 }
 
-.radix-themes, :root, .light, .light-theme {
+.radix-themes,
+:root,
+.light,
+.light-theme {
   --gray-1: #f2f1ef;
   --gray-2: #edeceb;
   --gray-3: #e4e2e1;
@@ -32,7 +35,7 @@
   --gray-a11: #000503a8;
   --gray-a12: #060500e2;
 
-  --gray-contrast: #FFFFFF;
+  --gray-contrast: #ffffff;
   --gray-surface: #ffffffcc;
   --gray-indicator: #7f7b77;
   --gray-track: #7f7b77;
@@ -40,7 +43,9 @@
 
 @supports (color: color(display-p3 1 1 1)) {
   @media (color-gamut: p3) {
-    :root, .light, .light-theme {
+    :root,
+    .light,
+    .light-theme {
       --gray-1: oklch(95.7% 0.0018 69.92);
       --gray-2: oklch(94.3% 0.0019 69.92);
       --gray-3: oklch(91.4% 0.0025 69.92);
@@ -67,7 +72,7 @@
       --gray-a11: color(display-p3 0 0.0118 0.0078 / 0.657);
       --gray-a12: color(display-p3 0.0196 0.0157 0 / 0.886);
 
-      --gray-contrast: #FFFFFF;
+      --gray-contrast: #ffffff;
       --gray-surface: color(display-p3 1 1 1 / 80%);
       --gray-indicator: oklch(58.6% 0.0074 69.92);
       --gray-track: oklch(58.6% 0.0074 69.92);

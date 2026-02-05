@@ -27,7 +27,7 @@ function Component(props: PageBlocksButton) {
         cursor: "pointer",
         ...(isSolid &&
           randomButtonImage && {
-            border: "2px solid var(--accent-7)",
+            border: "1px solid var(--accent-8)",
             backgroundImage: `url('${randomButtonImage}')`,
             backgroundSize: "cover",
             backgroundPosition: "center",

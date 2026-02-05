@@ -25,8 +25,20 @@ export default {
       type: "object",
       fields: [
         ...createIntlField({
+          name: "heading",
+          label: "Heading",
+          type: "string",
+          ui: { component: "textarea" },
+        }),
+        ...createIntlField({
           name: "text",
           label: "Text",
+          type: "string",
+          ui: { component: "textarea" },
+        }),
+        ...createIntlField({
+          name: "buttonText",
+          label: "Button Text",
           type: "string",
           ui: { component: "textarea" },
         }),
