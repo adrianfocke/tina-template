@@ -5,12 +5,18 @@
   "seo_de": {
     "title": "Valerie's Story",
     "metaDescription": "Valerie's Story ist voller Choreografie, moderner Akzente und Farben. Erfahre mehr über ihren Weg auf dieser Page.",
-    "metaKeywords": ["theater", "valerie voigt"]
+    "metaKeywords": [
+      "theater",
+      "valerie voigt"
+    ]
   },
   "seo_en": {
     "title": "Valerie's Story",
     "metaDescription": "Valerie's story is full of choreography, modern accents, and colors. Learn more about her journey on this page.",
-    "metaKeywords": ["theatre", "valerie voigt"]
+    "metaKeywords": [
+      "theatre",
+      "valerie voigt"
+    ]
   },
   "image": "/uploads/valerie.jpg",
   "blocks": [
@@ -77,6 +83,21 @@
         "paddingX": "4"
       },
       "_template": "Text"
+    },
+    {
+      "content": {
+        "heading_de": "Überzeugt?",
+        "heading_en": "Convinced?",
+        "text_de": "Valerie booked the \"Bytes Only\" package and received her own design as a website. I can also help you create your digital presence and take some of the work off your hands.",
+        "text_en": "Valerie booked the \"Freedom\" package, leaving all the online stress to me. I can also help you create your digital presence and take some of the work off your hands.",
+        "buttonText_de": "Termin buchen",
+        "buttonText_en": "Book an appointment"
+      },
+      "settings": {
+        "hasContainer": true,
+        "paddingX": "4"
+      },
+      "_template": "Call_To_Action"
     }
   ]
 }

@@ -7,18 +7,13 @@ import useBreakpoint from "../../utils/hook/useBreakpoint";
 import { renderBlocks } from "../../tina/templating/utils";
 import Link from "next/link";
 import { findBreakpointValue } from "../../tina/templating/special-fields";
-import { useState } from "react";
-import Text from "../Text/Text";
 
 export default function Component(props: PageBlocksImage) {
   const breakpoint = useBreakpoint();
   const aspectRatio = findBreakpointValue(breakpoint, "aspectRatio");
-  const [isHovered, setIsHovered] = useState(false);
 
   const content = (
     <AspectRatio
-      onMouseEnter={() => props.settings?.hasHoverEffect && setIsHovered(true)}
-      onMouseLeave={() => props.settings?.hasHoverEffect && setIsHovered(false)}
       data-tina-field={tinaField(props.content ?? props)}
       ratio={aspectRatioMap[props.settings?.[aspectRatio]] ?? 16 / 9}
       style={{
@@ -55,27 +50,6 @@ export default function Component(props: PageBlocksImage) {
         {props.content?.blocks?.map((block, j) => {
           return renderBlocks(block, j);
         })}
-        {isHovered && (
-          <Flex
-            align={"center"}
-            justify={"center"}
-            style={{
-              background: "#3E63DD",
-              position: "absolute",
-              textAlign: "center",
-              width: "100%",
-              height: "100%",
-            }}
-          >
-            <Text
-              content={{
-                text_de: "Klicken um die Story anzusehen",
-                text_en: "Click to view the story",
-              }}
-              settings={{ textColor: "white" }}
-            />
-          </Flex>
-        )}
       </Flex>
     </AspectRatio>
   );

@@ -64,12 +64,6 @@ export const AlignField: Template["fields"][number] = {
   options: ["left", "center", "right"],
 };
 
-export const HasHoverEffectField: Template["fields"][number] = {
-  name: "hasHoverEffect",
-  label: "Enable Hover Effect",
-  type: "boolean",
-};
-
 export const MarginXField: Template["fields"][number] = {
   name: "marginX",
   label: "Horizontal Margin Size",

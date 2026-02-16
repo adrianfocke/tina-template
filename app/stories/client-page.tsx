@@ -70,7 +70,6 @@ export default function ClientPage(props: ClientPageProps) {
                   ],
                 }}
                 settings={{
-                  hasHoverEffect: true,
                   blocksPosition: "center",
                   aspectRatio_initial: "1/1" as AspectRatio,
                   aspectRatio_xs: "1/1" as AspectRatio,

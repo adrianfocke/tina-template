@@ -87,8 +87,11 @@
     {
       "content": {
         "heading_de": "Überzeugt?",
+        "heading_en": "Convinced?",
         "text_de": "Coco hat das Paket \"Freiheit\" gebucht, jeglichen Online-Stress hat sie damit mir überlassen. Ich helfe auch dir beim Erstellen deiner digitalen Präsenz und nehme dir Einiges an Arbeit ab.",
-        "buttonText_de": "Termin buchen"
+        "text_en": "Coco booked the \"Freedom\" package, leaving all the online stress to me. I can also help you create your digital presence and take some of the work off your hands.",
+        "buttonText_de": "Termin buchen",
+        "buttonText_en": "Book an appointment"
       },
       "settings": {
         "hasContainer": true,
