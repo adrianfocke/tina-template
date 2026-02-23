@@ -5,6 +5,7 @@ import { LanguageContext } from "../../utils/context/language";
 import { languages, type Language } from "../../tina/templating/special-fields";
 import type { FooterQuery } from "../../tina/__generated__/types";
 import Text from "../Text/Text";
+import Button from "../Button/Button";
 
 const languageLabels: Record<Language, string> = {
   de: "Deutsch",
@@ -30,7 +31,7 @@ export default function Footer(props: FooterQuery["footer"]) {
       py={props.settings?.paddingY ?? "0"}
     >
       <Flex justify={"between"} align={"center"}>
-        <Flex gap={"4"} direction={"row"} display={"flex"}>
+        <Flex gap={"4"} direction={"row"} display={"flex"} align={"center"}>
           {props.links?.map((link, index) => {
             return (
               <Text
@@ -40,6 +41,20 @@ export default function Footer(props: FooterQuery["footer"]) {
               />
             );
           })}
+          <Button
+            content={{
+              text_de: "Signal",
+              text_en: "Signal",
+            }}
+            settings={{ align: "center" }}
+          />
+          <Button
+            content={{
+              text_de: "WhatsApp",
+              text_en: "WhatsApp",
+            }}
+            settings={{ align: "center" }}
+          />
         </Flex>
         <Select.Root value={language} onValueChange={handleLanguageChange}>
           <Select.Trigger aria-label="Select language" />
