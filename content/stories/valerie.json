@@ -5,18 +5,12 @@
   "seo_de": {
     "title": "Valerie's Story",
     "metaDescription": "Valerie's Story ist voller Choreografie, moderner Akzente und Farben. Erfahre mehr über ihren Weg auf dieser Page.",
-    "metaKeywords": [
-      "theater",
-      "valerie voigt"
-    ]
+    "metaKeywords": ["theater", "valerie voigt"]
   },
   "seo_en": {
     "title": "Valerie's Story",
     "metaDescription": "Valerie's story is full of choreography, modern accents, and colors. Learn more about her journey on this page.",
-    "metaKeywords": [
-      "theatre",
-      "valerie voigt"
-    ]
+    "metaKeywords": ["theatre", "valerie voigt"]
   },
   "image": "/uploads/valerie.jpg",
   "blocks": [

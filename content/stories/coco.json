@@ -5,18 +5,12 @@
   "seo_de": {
     "title": "Coco's Story",
     "metaDescription": "Coco's Story ist voller Hingabe, Freude und Farben. Erfahre mehr über ihren Weg auf dieser Page.",
-    "metaKeywords": [
-      "soundhealing",
-      "alkemy soul"
-    ]
+    "metaKeywords": ["soundhealing", "alkemy soul"]
   },
   "seo_en": {
     "title": "Coco's Story",
     "metaDescription": "Coco's story is full of dedication, joy and colour. Find out more about her journey on this page.",
-    "metaKeywords": [
-      "soundhealing",
-      "alkemy soul"
-    ]
+    "metaKeywords": ["soundhealing", "alkemy soul"]
   },
   "image": "/uploads/coco.png",
   "blocks": [
