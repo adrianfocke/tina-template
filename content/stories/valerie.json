@@ -90,8 +90,12 @@
         "heading_en": "Convinced?",
         "text_de": "Valerie booked the \"Bytes Only\" package and received her own design as a website. I can also help you create your digital presence and take some of the work off your hands.",
         "text_en": "Valerie booked the \"Freedom\" package, leaving all the online stress to me. I can also help you create your digital presence and take some of the work off your hands.",
-        "buttonText_de": "Termin buchen",
-        "buttonText_en": "Book an appointment"
+        "buttonText_de": "Kontakt aufnehmen (Signal)",
+        "buttonText_en": "Contact us (Signal)",
+        "buttonUrl": "https://signal.me/#eu/ot0DWc_cCOQjXvEt3tihbUpFp2nR0qk6I9QO8gzJCns2tIPXOftM-4x07RvqX9cp",
+        "buttonText1_de": "Kontakt aufnehmen (Whatsapp)",
+        "buttonText1_en": "Contact us (Whatsapp)",
+        "buttonUrl1": "https://wa.me/qr/ZR7WP6PAXKLHK1"
       },
       "settings": {
         "hasContainer": true,

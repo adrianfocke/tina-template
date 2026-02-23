@@ -42,6 +42,12 @@ export default {
           type: "string",
           ui: { component: "textarea" },
         }),
+        ...createIntlField({
+          name: "buttonText1",
+          label: "Button Text 1",
+          type: "string",
+          ui: { component: "textarea" },
+        }),
       ],
     },
     {

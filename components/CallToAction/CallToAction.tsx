@@ -37,13 +37,22 @@ export default function Component(props: PageBlocksCall_To_Action) {
           />
         </Box>
         <Box width={{ initial: "100%", md: "25%" }}>
-          <Button
-            content={{
-              text_de: props.content?.buttonText_de,
-              text_en: props.content?.buttonText_en,
-            }}
-            settings={{ align: "center" }}
-          />
+          <Flex direction="column" gap="2">
+            <Button
+              content={{
+                text_de: props.content?.buttonText_de,
+                text_en: props.content?.buttonText_en,
+              }}
+              settings={{ align: "center" }}
+            />
+            <Button
+              content={{
+                text_de: props.content?.buttonText1_de,
+                text_en: props.content?.buttonText1_en,
+              }}
+              settings={{ align: "center" }}
+            />
+          </Flex>
         </Box>
       </Flex>
     </Card>
