@@ -10,29 +10,17 @@ import Link from "next/link";
 function Component(props: PageBlocksButton) {
   const language = useContext(LanguageContext);
   const text = findIntlValue(language, "text");
-
-  const variant = (props.settings?.variant as any) ?? "solid";
-  const isSolid = variant === "solid";
-
-  const randomButtonImage = useBackgroundImage(isSolid);
+  const variant = props.settings?.variant ?? "classic";
 
   const content = (
     <Button
       className={props.settings?.font as any}
       radius={(props.settings?.radius as any) ?? "full"}
       data-tina-field={tinaField(props.content ?? props)}
-      variant={variant}
+      variant={variant as any}
       size={(props.settings?.textSize as any) ?? "3"}
       style={{
         cursor: "pointer",
-        ...(isSolid &&
-          randomButtonImage && {
-            border: "1px solid var(--accent-8)",
-            backgroundImage: `url('${randomButtonImage}')`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }),
       }}
     >
       {props.content?.[text] || "Add your text here"}

@@ -14,7 +14,7 @@ export default function RootLayout({
     <html lang="en" className={`${sans.variable} ${serif.variable}`}>
       <body style={{ margin: 0 }}>
         <LanguageInitializer />
-        <Theme>
+        <Theme accentColor="orange">
           <main>{children}</main>
         </Theme>
       </body>

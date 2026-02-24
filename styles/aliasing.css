@@ -2,7 +2,7 @@
 .light,
 .light-theme,
 .radix-themes {
-  --color-background: #fdfdfd;
+  --color-background: var(--orange-1);
 }
 
 .radix-themes,
