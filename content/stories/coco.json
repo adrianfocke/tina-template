@@ -5,12 +5,18 @@
   "seo_de": {
     "title": "Coco's Story",
     "metaDescription": "Coco's Story ist voller Hingabe, Freude und Farben. Erfahre mehr über ihren Weg auf dieser Page.",
-    "metaKeywords": ["soundhealing", "alkemy soul"]
+    "metaKeywords": [
+      "soundhealing",
+      "alkemy soul"
+    ]
   },
   "seo_en": {
     "title": "Coco's Story",
     "metaDescription": "Coco's story is full of dedication, joy and colour. Find out more about her journey on this page.",
-    "metaKeywords": ["soundhealing", "alkemy soul"]
+    "metaKeywords": [
+      "soundhealing",
+      "alkemy soul"
+    ]
   },
   "image": "/uploads/coco.png",
   "blocks": [
@@ -86,13 +92,12 @@
         "text_en": "Coco booked the \"Freedom\" package, leaving all the online stress to me. I can also help you create your digital presence and take some of the work off your hands.",
         "buttonText_de": "Kontakt aufnehmen (Signal)",
         "buttonText_en": "Contact me (Signal)",
-        "buttonUrl": "https://signal.me/#eu/ot0DWc_cCOQjXvEt3tihbUpFp2nR0qk6I9QO8gzJCns2tIPXOftM-4x07RvqX9cp",
         "buttonText1_de": "Kontakt aufnehmen (Whatsapp)",
-        "buttonText1_en": "Contact me (Whatsapp)",
-        "buttonUrl1": "https://wa.me/qr/ZR7WP6PAXKLHK1"
+        "buttonText1_en": "Contact me (Whatsapp)"
       },
       "settings": {
         "hasContainer": true,
+        "marginBottom": "9",
         "paddingX": "4"
       },
       "_template": "Call_To_Action"

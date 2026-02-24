@@ -93,6 +93,7 @@
       },
       "settings": {
         "hasContainer": true,
+        "marginBottom": "9",
         "paddingX": "4"
       },
       "_template": "Call_To_Action"

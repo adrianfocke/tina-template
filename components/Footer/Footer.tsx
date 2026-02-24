@@ -46,14 +46,14 @@ export default function Footer(props: FooterQuery["footer"]) {
               text_de: "Signal",
               text_en: "Signal",
             }}
-            settings={{ align: "center" }}
+            settings={{ align: "center", variant: "outline" }}
           />
           <Button
             content={{
               text_de: "WhatsApp",
               text_en: "WhatsApp",
             }}
-            settings={{ align: "center" }}
+            settings={{ align: "center", variant: "outline" }}
           />
         </Flex>
         <Select.Root value={language} onValueChange={handleLanguageChange}>
