@@ -2,7 +2,6 @@ import { Box, Button } from "@radix-ui/themes";
 import type { PageBlocksButton } from "../../tina/__generated__/types";
 import { useContext } from "react";
 import { LanguageContext } from "../../utils/context/language";
-import { useBackgroundImage } from "../../utils/hook/useBackgroundImage";
 import { tinaField } from "tinacms/dist/react";
 import { findIntlValue } from "../../tina/templating/special-fields";
 import Link from "next/link";
