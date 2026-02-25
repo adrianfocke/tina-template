@@ -5,12 +5,20 @@
   "seo_de": {
     "title": "Hanna's Story",
     "metaDescription": "Hanna's Story ist voller Klarheit, Tiefe und Verbindung. Erfahre mehr über ihren Weg auf dieser Page.",
-    "metaKeywords": ["breathwork", "breath_and_growth", "breath and growth"]
+    "metaKeywords": [
+      "breathwork",
+      "breath_and_growth",
+      "breath and growth"
+    ]
   },
   "seo_en": {
     "title": "Hanna's Story",
     "metaDescription": "Hanna's story is full of clarity, depth, and connection. Learn more about her journey on this page.",
-    "metaKeywords": ["breathwork", "breath_and_growth", "breath and growth"]
+    "metaKeywords": [
+      "breathwork",
+      "breath_and_growth",
+      "breath and growth"
+    ]
   },
   "image": "/uploads/hanna-min.png",
   "blocks": [
@@ -23,7 +31,7 @@
         "hasContainer": true,
         "textSize": "9",
         "font": "serif",
-        "marginBottom": "1",
+        "marginBottom": "3",
         "paddingX": "4",
         "paddingY": "4"
       },
@@ -37,7 +45,7 @@
       "settings": {
         "hasContainer": true,
         "textSize": "",
-        "marginBottom": "5",
+        "marginBottom": "6",
         "paddingX": "4"
       },
       "_template": "Text"
@@ -47,7 +55,7 @@
         "image": "/uploads/hanna-min.png"
       },
       "settings": {
-        "marginBottom": ""
+        "marginBottom": "6"
       },
       "_template": "Image"
     },
@@ -59,8 +67,8 @@
       "settings": {
         "hasContainer": true,
         "textSize": "6",
-        "marginY": "5",
-        "marginBottom": "",
+        "marginY": "",
+        "marginBottom": "3",
         "paddingX": "4"
       },
       "_template": "Text"
@@ -73,8 +81,19 @@
       "settings": {
         "hasContainer": true,
         "textSize": "6",
-        "marginBottom": "5",
+        "marginBottom": "6",
         "paddingX": "4"
+      },
+      "_template": "Text"
+    },
+    {
+      "link": "https://www.breathandgrowth.at/",
+      "content": {
+        "text_de": "Schau dir die Webseite hier an",
+        "text_en": "Check out the website here"
+      },
+      "settings": {
+        "marginBottom": "6"
       },
       "_template": "Text"
     },
@@ -86,10 +105,8 @@
         "text_en": "Hanna booked the \"Bytes Only\" package and received her own design as a website. I can also help you create your digital presence and take some of the work off your hands.",
         "buttonText_de": "Kontakt aufnehmen (Signal)",
         "buttonText_en": "Contact me (Signal)",
-        "buttonUrl": "https://signal.me/#eu/ot0DWc_cCOQjXvEt3tihbUpFp2nR0qk6I9QO8gzJCns2tIPXOftM-4x07RvqX9cp",
         "buttonText1_de": "Kontakt aufnehmen (Whatsapp)",
-        "buttonText1_en": "Contact me (Whatsapp)",
-        "buttonUrl1": "https://wa.me/qr/ZR7WP6PAXKLHK1"
+        "buttonText1_en": "Contact me (Whatsapp)"
       },
       "settings": {
         "hasContainer": true,

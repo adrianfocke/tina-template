@@ -26,7 +26,6 @@ export default function Footer(props: FooterQuery["footer"]) {
     <Box
       style={{
         borderTop: "1px solid var(--gray-6)",
-        marginTop: "var(--space-6)",
       }}
       mx={props.settings?.marginX ?? "0"}
       mt={props.settings?.marginY ?? "0"}

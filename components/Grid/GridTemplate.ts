@@ -16,6 +16,7 @@ import TextTemplate from "../Text/TextTemplate";
 import ButtonTemplate from "../Button/ButtonTemplate";
 import { createResponsiveField } from "../../tina/templating/special-fields";
 import SlideshowTemplate from "../Slideshow/SlideshowTemplate";
+import CallToActionTemplate from "../CallToAction/CallToActionTemplate";
 
 export default {
   name: "Grid",
@@ -43,6 +44,7 @@ export default {
                 ImageTemplate,
                 SlideshowTemplate,
                 TextTemplate,
+                CallToActionTemplate,
               ],
             },
           ],

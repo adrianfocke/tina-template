@@ -43,7 +43,7 @@ export default function Component(props: PageBlocksText) {
       mx={props.settings?.marginX ?? "0"}
       my={props.settings?.marginY ?? "0"}
       mb={props.settings?.marginBottom ?? "5"}
-      px={props.settings?.paddingX ?? "0"}
+      px={props.settings?.paddingX ?? "4"}
       py={props.settings?.paddingY ?? "0"}
       style={{
         textAlign: props.settings?.align as any,
@@ -51,9 +51,6 @@ export default function Component(props: PageBlocksText) {
     >
       {props.link ? (
         <Link
-          style={{
-            borderBottom: isExternalLink ? "1px solid var(--gray-12)" : "none",
-          }}
           href={props.link}
           target={isExternalLink ? "_blank" : undefined}
           rel={isExternalLink ? "noopener noreferrer" : undefined}

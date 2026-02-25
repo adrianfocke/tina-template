@@ -5,12 +5,18 @@
   "seo_de": {
     "title": "Valerie's Story",
     "metaDescription": "Valerie's Story ist voller Choreografie, moderner Akzente und Farben. Erfahre mehr über ihren Weg auf dieser Page.",
-    "metaKeywords": ["theater", "valerie voigt"]
+    "metaKeywords": [
+      "theater",
+      "valerie voigt"
+    ]
   },
   "seo_en": {
     "title": "Valerie's Story",
     "metaDescription": "Valerie's story is full of choreography, modern accents, and colors. Learn more about her journey on this page.",
-    "metaKeywords": ["theatre", "valerie voigt"]
+    "metaKeywords": [
+      "theatre",
+      "valerie voigt"
+    ]
   },
   "image": "/uploads/valerie.jpg",
   "blocks": [
@@ -23,7 +29,7 @@
         "hasContainer": true,
         "textSize": "9",
         "font": "serif",
-        "marginBottom": "1",
+        "marginBottom": "3",
         "paddingX": "4",
         "paddingY": "4"
       },
@@ -37,7 +43,7 @@
       "settings": {
         "hasContainer": true,
         "textSize": "",
-        "marginBottom": "5",
+        "marginBottom": "6",
         "paddingX": "4"
       },
       "_template": "Text"
@@ -47,7 +53,7 @@
         "image": "/uploads/valerie.jpg"
       },
       "settings": {
-        "marginBottom": ""
+        "marginBottom": "6"
       },
       "_template": "Image"
     },
@@ -59,8 +65,8 @@
       "settings": {
         "hasContainer": true,
         "textSize": "6",
-        "marginY": "5",
-        "marginBottom": "",
+        "marginY": "",
+        "marginBottom": "3",
         "paddingX": "4"
       },
       "_template": "Text"
@@ -73,8 +79,20 @@
       "settings": {
         "hasContainer": true,
         "textSize": "6",
-        "marginBottom": "5",
+        "marginBottom": "6",
         "paddingX": "4"
+      },
+      "_template": "Text"
+    },
+    {
+      "link": "https://www.valerievoigt.com/",
+      "content": {
+        "text_de": "Schau dir die Webseite hier an",
+        "text_en": "Check out the website here"
+      },
+      "settings": {
+        "hasContainer": true,
+        "marginBottom": "6"
       },
       "_template": "Text"
     },
@@ -86,10 +104,8 @@
         "text_en": "Valerie booked the \"Freedom\" package, leaving all the online stress to me. I can also help you create your digital presence and take some of the work off your hands.",
         "buttonText_de": "Kontakt aufnehmen (Signal)",
         "buttonText_en": "Contact me (Signal)",
-        "buttonUrl": "https://signal.me/#eu/ot0DWc_cCOQjXvEt3tihbUpFp2nR0qk6I9QO8gzJCns2tIPXOftM-4x07RvqX9cp",
         "buttonText1_de": "Kontakt aufnehmen (Whatsapp)",
-        "buttonText1_en": "Contact me (Whatsapp)",
-        "buttonUrl1": "https://wa.me/qr/ZR7WP6PAXKLHK1"
+        "buttonText1_en": "Contact me (Whatsapp)"
       },
       "settings": {
         "hasContainer": true,

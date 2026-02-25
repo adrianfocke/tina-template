@@ -10,7 +10,7 @@ export default function Component(props: PageBlocksCall_To_Action) {
     <Card
       style={{
         background:
-          "radial-gradient(circle,rgba(237, 236, 235, 1) 0%, rgba(62, 99, 221, 1) 100%)",
+          "radial-gradient(circle,rgba(237, 236, 235, 1) 0%, rgba(232, 73, 7, 1) 100%)",
       }}
     >
       <Flex
@@ -33,7 +33,7 @@ export default function Component(props: PageBlocksCall_To_Action) {
               text_de: props.content?.text_de,
               text_en: props.content?.text_en,
             }}
-            settings={{ marginBottom: "1" }}
+            settings={{ marginBottom: "1", paddingX: "0" }}
           />
         </Box>
         <Box width={{ initial: "100%", md: "25%" }}>
@@ -45,13 +45,15 @@ export default function Component(props: PageBlocksCall_To_Action) {
               }}
               settings={{ align: "center" }}
             />
-            <Button
-              content={{
-                text_de: props.content?.buttonText1_de,
-                text_en: props.content?.buttonText1_en,
-              }}
-              settings={{ align: "center" }}
-            />
+            {props.content?.buttonText1_de || props.content?.buttonText1_en ? (
+              <Button
+                content={{
+                  text_de: props.content?.buttonText1_de,
+                  text_en: props.content?.buttonText1_en,
+                }}
+                settings={{ align: "center" }}
+              />
+            ) : null}
           </Flex>
         </Box>
       </Flex>

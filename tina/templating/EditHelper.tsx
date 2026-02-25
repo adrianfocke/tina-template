@@ -9,7 +9,7 @@ export default (props: any) => {
       data-tina-field={tinaField(props.content ?? props)}
       radius="full"
       variant="soft"
-      style={{ position: "absolute", zIndex: 10 }}
+      style={{ position: "absolute", zIndex: 100 }}
     >
       <MixerHorizontalIcon width="16" height="16" />
     </IconButton>

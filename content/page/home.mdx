@@ -37,34 +37,29 @@ blocks:
       aspectRatio_md: 3/1
       aspectRatio_lg: 3/1
       aspectRatio_xl: 3/1
-      marginBottom: ''
+      marginBottom: '6'
     _template: Image
   - content:
-      text_de: 'Servus, ich bin Adrian!'
-      text_en: 'Hi, I''m Adrian!'
+      text_de: 'Hi, mein Name ist Adrian.'
+      text_en: 'Hi, my name is Adrian.'
     settings:
       hasContainer: true
-      align: left
-      textSize: ''
-      font: serif
-      marginBottom: ''
+      font: ''
+      marginBottom: '3'
       paddingX: '4'
-      paddingY: '4'
-    _template: Heading
+    _template: Text
   - content:
       text_de: >-
-        Hi, mein Name ist Adrian. Ich bin Developer und Digital Consultant in
-        Wien. Durch meine Arbeit kann ich Menschen digital erheben und das
-        erfüllt mich.
+        Ich bin Developer und Digital Consultant in Wien. Durch meine Arbeit
+        kann ich Menschen digital erheben und das erfüllt mich.
       text_en: >-
-        Hi, my name is Adrian. I am a developer and digital consultant in
-        Vienna. My work allows me to uplift people digitally, and that fulfills
-        me.
+        I am a developer and digital consultant in Vienna. My work allows me to
+        uplift people digitally, and that fulfills me.
     settings:
       hasContainer: true
       textSize: '6'
-      marginY: '4'
-      marginBottom: ''
+      marginY: ''
+      marginBottom: '3'
       paddingX: '4'
       paddingY: ''
     _template: Text
@@ -78,38 +73,46 @@ blocks:
         and hold various events on the topics of masculinity and feminism.
     settings:
       hasContainer: true
-      marginX: '4'
-      marginY: ''
       marginBottom: '9'
     _template: Text
   - content:
       items:
         - blocks:
             - content:
-                text_de: 'Meine Mission:'
-                text_en: 'My mission:'
+                blocks:
+                  - content:
+                      text_de: 'Meine Mission:'
+                      text_en: 'My mission:'
+                    settings:
+                      marginBottom: '4'
+                      paddingX: '4'
+                      paddingY: '0'
+                    _template: Heading
+                  - content:
+                      text_de: >-
+                        Leisen Stimmen Gehör geben, verstehenwollen, ehrlich
+                        sein, reisen, Räume halten, Privilegien sehen und
+                        hinterfragen, Männer* in ihre Sanftheit bringen,
+                        Yogi:nis unterstützen, Dir den Rücken stärken.
+                      text_en: >-
+                        Listening to quiet voices, wanting to understand, being
+                        honest, traveling, holding spaces, seeing and
+                        questioning privileges, bringing men* into their
+                        gentleness, supporting yogi:nis, having your back.
+                    settings:
+                      textSize: '7'
+                      font: serif
+                      paddingX: '4'
+                    _template: Text
               settings:
-                align: ''
-                marginBottom: '4'
-                paddingX: '4'
-              _template: Heading
-            - content:
-                text_de: >-
-                  Leisen Stimmen Gehör geben, verstehenwollen, ehrlich sein,
-                  reisen, Räume halten, Privilegien sehen und hinterfragen,
-                  Männer* in ihre Sanftheit bringen, Yogi:nis unterstützen, Dir
-                  den Rücken stärken.
-                text_en: >-
-                  Listening to quiet voices, wanting to understand, being
-                  honest, traveling, holding spaces, seeing and questioning
-                  privileges, bringing men* into their gentleness, supporting
-                  yogi:nis, having your back.
-              settings:
-                align: left
-                textSize: '8'
-                font: serif
-                paddingX: '4'
-              _template: Text
+                aspectRatio_initial: 1/1
+                aspectRatio_xs: 1/1
+                aspectRatio_sm: 1/1
+                aspectRatio_md: 4/3
+                aspectRatio_lg: 4/3
+                aspectRatio_xl: 4/3
+                blocksPosition: center
+              _template: Image
         - blocks:
             - content:
                 blocks:
@@ -268,17 +271,29 @@ blocks:
       paddingY: ''
     _template: Heading
   - content:
+      text_de: >-
+        Du bringst die Idee, ich biete dir volle Transparenz, Unabhängigkeit von
+        Big Tech oder heimlichen Abo-Fallen. Mich zeichnet aus, dass ich meine
+        Kund:innen wirklich kenne und nur an Projekten arbeite, die mich
+        erfüllen und etwas bewirken. Du hast ein solches Projekt? Dann kannst du
+        aus folgenden Paketen wählen.
+      text_en: >-
+        You bring the idea, I offer you complete transparency, independence from
+        big tech, and no hidden subscription traps. What sets me apart is that I
+        really know my clients and only work on projects that fulfill me and
+        make a difference. Do you have such a project? Then you can choose from
+        the following packages.
+    settings:
+      hasContainer: true
+      marginBottom: '6'
+      paddingX: '4'
+    _template: Text
+  - content:
       items:
         - blocks:
             - content:
-                text_de: Volle Freiheit
-                text_en: Full Freedom
-              settings:
-                textSize: '6'
-                font: sans
-                marginBottom: ''
-              _template: Heading
-            - content:
+                heading_de: Volle Freiheit
+                heading_en: Full Freedom
                 text_de: >-
                   Abo-freies Paket für Dich und all deine Ideen: wir lassen
                   deine perfekte Webseite entstehen. Inkludiert sind ein
@@ -290,30 +305,12 @@ blocks:
                   Includes a collaborative design thinking process, technical
                   implementation, extensive storytelling support, and assistance
                   beyond completion. Social media strategy available on request.
-              settings:
-                textSize: '6'
-                marginX: ''
-                marginY: ''
-                paddingY: '4'
-              _template: Text
-            - link: 'mailto:afocke@pm.me'
-              content:
-                text_de: Buchen
-                text_en: Book
-              settings:
-                variant: solid
-                textSize: '3'
-                marginY: ''
-              _template: Button
+                buttonText_de: Buchen
+              _template: Call_To_Action
         - blocks:
             - content:
-                text_de: Bytes Only
-                text_en: Bytes Only
-              settings:
-                textSize: '6'
-                font: sans
-              _template: Heading
-            - content:
+                heading_de: Bytes Only
+                heading_en: Bytes Only
                 text_de: >-
                   Du kommst mit einem fertigen Design und brauchst wen der es
                   dir technisch umsetzt und dich digital unterstützt? Ich habe
@@ -326,21 +323,8 @@ blocks:
                   expertise and the right technology, including an intuitive CMS
                   interface and tech stack based on state-of-the-art web
                   technology.
-              settings:
-                textSize: '6'
-                marginY: ''
-                marginBottom: '5'
-                paddingY: '4'
-              _template: Text
-            - link: 'mailto:afocke@pm.me'
-              content:
-                text_de: Buchen
-                text_en: Book
-              settings:
-                variant: solid
-                textSize: '3'
-                marginY: '0'
-              _template: Button
+                buttonText_de: Buchen
+              _template: Call_To_Action
         - blocks:
             - content:
                 text_de: Shanti
@@ -348,6 +332,7 @@ blocks:
               settings:
                 textSize: '6'
                 font: sans
+                marginBottom: '4'
               _template: Heading
             - content:
                 text_de: >-
@@ -363,7 +348,8 @@ blocks:
               settings:
                 textSize: '6'
                 marginY: ''
-                paddingY: '4'
+                paddingX: '0'
+                paddingY: ''
               _template: Text
             - link: 'mailto:afocke@pm.me'
               content:
@@ -372,7 +358,8 @@ blocks:
               settings:
                 variant: outline
                 textSize: '3'
-                marginY: '0'
+                marginY: ''
+                paddingX: ''
               _template: Button
         - blocks:
             - content:
@@ -381,6 +368,8 @@ blocks:
               settings:
                 textSize: '6'
                 font: sans
+                marginX: ''
+                marginBottom: '4'
               _template: Heading
             - content:
                 text_de: >-
@@ -396,7 +385,8 @@ blocks:
               settings:
                 textSize: '6'
                 marginY: ''
-                paddingY: '4'
+                paddingX: '0'
+                paddingY: ''
               _template: Text
             - link: 'mailto:afocke@pm.me'
               content:
@@ -406,15 +396,16 @@ blocks:
                 variant: outline
                 textSize: '3'
                 marginY: ''
+                paddingX: ''
               _template: Button
     settings:
       hasContainer: true
-      gap_initial: '5'
-      gap_xs: '5'
-      gap_sm: '5'
-      gap_md: '5'
-      gap_lg: '5'
-      gap_xl: '5'
+      gap_initial: '6'
+      gap_xs: '6'
+      gap_sm: '6'
+      gap_md: '6'
+      gap_lg: '6'
+      gap_xl: '6'
       marginBottom: '9'
       paddingX: '4'
     _template: Grid
