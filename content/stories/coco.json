@@ -100,15 +100,21 @@
       "content": {
         "heading_de": "Überzeugt?",
         "heading_en": "Convinced?",
-        "text_de": "Coco hat das Paket \"Freiheit\" gebucht, jeglichen Online-Stress hat sie damit mir überlassen. Ich helfe auch dir beim Erstellen deiner digitalen Präsenz und nehme dir Einiges an Arbeit ab.",
+        "text_de": "Coco hat das Paket \"Freiheit\" gebucht und somit jeglichen Online-Stress mir überlassen. Ich helfe auch dir beim Erstellen deiner digitalen Präsenz und nehme dir Einiges an Arbeit ab.",
         "text_en": "Coco booked the \"Freedom\" package, leaving all the online stress to me. I can also help you create your digital presence and take some of the work off your hands.",
-        "buttonText_de": "Kontakt aufnehmen (Signal)",
-        "buttonText_en": "Contact me (Signal)",
-        "buttonText1_de": "Kontakt aufnehmen (Whatsapp)",
-        "buttonText1_en": "Contact me (Whatsapp)"
+        "buttonText_de": "",
+        "buttonText_en": "",
+        "buttonText1_de": "",
+        "buttonText1_en": ""
       },
       "settings": {
         "hasContainer": true,
+        "direction_initial": "column",
+        "direction_xs": "column",
+        "direction_sm": "column",
+        "direction_md": "row",
+        "direction_lg": "row",
+        "direction_xl": "row",
         "marginBottom": "9",
         "paddingX": "4"
       },

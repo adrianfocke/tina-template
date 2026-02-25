@@ -1,5 +1,8 @@
 import type { Template } from "tinacms";
-import { createIntlField } from "../../tina/templating/special-fields";
+import {
+  createIntlField,
+  createResponsiveField,
+} from "../../tina/templating/special-fields";
 import {
   AlignField,
   TextSizeField,
@@ -13,6 +16,7 @@ import {
   ExtraMarginBottomField,
   ExtraPaddingWhenInGridField,
   IDField,
+  DirectionField,
 } from "../../tina/templating/granular-fields";
 
 export default {
@@ -42,12 +46,14 @@ export default {
           type: "string",
           ui: { component: "textarea" },
         }),
+        { name: "buttonLink", label: "Button Link", type: "string" },
         ...createIntlField({
           name: "buttonText1",
           label: "Button Text 1",
           type: "string",
           ui: { component: "textarea" },
         }),
+        { name: "buttonLink1", label: "Button Link 1", type: "string" },
       ],
     },
     {
@@ -58,6 +64,7 @@ export default {
         IDField,
         HasContainerField,
         AlignField,
+        ...createResponsiveField(DirectionField),
         TextSizeField,
         TextColorField,
         FontField,

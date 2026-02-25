@@ -44,7 +44,7 @@ export default function Navigation(props: NavigationQuery["navigation"]) {
                 side="bottom"
                 align="end"
               >
-                <Flex direction="column" gap="3">
+                <Flex direction="column" gap="2">
                   {props.links?.map((link, index) => {
                     return <Text key={index} {...(link as any)} />;
                   })}
@@ -53,11 +53,7 @@ export default function Navigation(props: NavigationQuery["navigation"]) {
             </Popover.Root>
           </Box>
 
-          <Flex
-            display={{ initial: "none", md: "flex" }}
-            gap={"4"}
-            direction={"row"}
-          >
+          <Flex display={{ initial: "none", md: "flex" }} direction={"row"}>
             {props.links?.map((link, index) => {
               return <Text key={index} {...(link as any)} />;
             })}

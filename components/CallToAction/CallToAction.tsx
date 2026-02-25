@@ -14,10 +14,42 @@ export default function Component(props: PageBlocksCall_To_Action) {
       }}
     >
       <Flex
-        direction={{ initial: "column", md: "row" }}
+        direction={{
+          initial: props.settings?.direction_initial as any,
+          xs: props.settings?.direction_xs as any,
+          sm: props.settings?.direction_sm as any,
+          md: props.settings?.direction_md as any,
+          lg: props.settings?.direction_lg as any,
+          xl: props.settings?.direction_xl as any,
+        }}
         p={"4"}
         gap="4"
-        align="center"
+        align={{
+          initial:
+            (props.settings?.direction_initial as any) === "row"
+              ? "center"
+              : undefined,
+          xs:
+            (props.settings?.direction_xs as any) === "row"
+              ? "center"
+              : undefined,
+          sm:
+            (props.settings?.direction_sm as any) === "row"
+              ? "center"
+              : undefined,
+          md:
+            (props.settings?.direction_md as any) === "row"
+              ? "center"
+              : undefined,
+          lg:
+            (props.settings?.direction_lg as any) === "row"
+              ? "center"
+              : undefined,
+          xl:
+            (props.settings?.direction_xl as any) === "row"
+              ? "center"
+              : undefined,
+        }}
         data-tina-field={tinaField(props.content ?? props)}
       >
         <Box width={{ initial: "100%", md: "75%" }}>
@@ -38,20 +70,20 @@ export default function Component(props: PageBlocksCall_To_Action) {
         </Box>
         <Box width={{ initial: "100%", md: "25%" }}>
           <Flex direction="column" gap="2">
-            <Button
-              content={{
-                text_de: props.content?.buttonText_de,
-                text_en: props.content?.buttonText_en,
-              }}
-              settings={{ align: "center" }}
-            />
+            {props.content?.buttonText_de || props.content?.buttonText_en ? (
+              <Button
+                content={{
+                  text_de: props.content?.buttonText_de,
+                  text_en: props.content?.buttonText_en,
+                }}
+              />
+            ) : null}
             {props.content?.buttonText1_de || props.content?.buttonText1_en ? (
               <Button
                 content={{
                   text_de: props.content?.buttonText1_de,
                   text_en: props.content?.buttonText1_en,
                 }}
-                settings={{ align: "center" }}
               />
             ) : null}
           </Flex>

@@ -34,7 +34,7 @@ export default function Footer(props: FooterQuery["footer"]) {
     >
       <Container>
         <Flex justify={"between"} align={"center"}>
-          <Flex gap={"4"} direction={"row"} display={"flex"} align={"center"}>
+          <Flex gap={"2"} direction={"row"} display={"flex"} align={"center"}>
             {props.links?.map((link, index) => {
               return (
                 <Text
@@ -45,6 +45,9 @@ export default function Footer(props: FooterQuery["footer"]) {
               );
             })}
             <Button
+              link={
+                "https://signal.me/#eu/ot0DWc_cCOQjXvEt3tihbUpFp2nR0qk6I9QO8gzJCns2tIPXOftM-4x07RvqX9cp"
+              }
               content={{
                 text_de: "Signal",
                 text_en: "Signal",
@@ -52,9 +55,18 @@ export default function Footer(props: FooterQuery["footer"]) {
               settings={{ align: "center", variant: "outline", textSize: "2" }}
             />
             <Button
+              link={"https://wa.me/qr/ZR7WP6PAXKLHK1"}
               content={{
                 text_de: "WhatsApp",
                 text_en: "WhatsApp",
+              }}
+              settings={{ align: "center", variant: "outline", textSize: "2" }}
+            />
+            <Button
+              link={"mailto:afocke@pm.me"}
+              content={{
+                text_de: "Mail",
+                text_en: "Mail",
               }}
               settings={{ align: "center", variant: "outline", textSize: "2" }}
             />

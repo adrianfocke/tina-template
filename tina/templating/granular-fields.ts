@@ -234,6 +234,13 @@ export const ColumnsField: Template["fields"][number] = {
   options: [...radixUnitsPositive],
 };
 
+export const DirectionField: Template["fields"][number] = {
+  name: "direction",
+  label: "Direction",
+  type: "string",
+  options: ["row", "column", "row-reverse", "column-reverse"],
+};
+
 export const IsCardField: Template["fields"][number] = {
   name: "isCard",
   label: "Wrap Component in Card",
