@@ -5,20 +5,12 @@
   "seo_de": {
     "title": "Hanna's Story",
     "metaDescription": "Hanna's Story ist voller Klarheit, Tiefe und Verbindung. Erfahre mehr über ihren Weg auf dieser Page.",
-    "metaKeywords": [
-      "breathwork",
-      "breath_and_growth",
-      "breath and growth"
-    ]
+    "metaKeywords": ["breathwork", "breath_and_growth", "breath and growth"]
   },
   "seo_en": {
     "title": "Hanna's Story",
     "metaDescription": "Hanna's story is full of clarity, depth, and connection. Learn more about her journey on this page.",
-    "metaKeywords": [
-      "breathwork",
-      "breath_and_growth",
-      "breath and growth"
-    ]
+    "metaKeywords": ["breathwork", "breath_and_growth", "breath and growth"]
   },
   "image": "/uploads/hanna-min.png",
   "blocks": [
@@ -104,8 +96,9 @@
         "heading_en": "Convinced?",
         "text_de": "Hanna hat das Paket \"Bytes Only\" gebucht und dadurch ihr eigenes Design umgesetzt als Webseite erhalten. Ich helfe auch dir beim Erstellen deiner digitalen Präsenz und nehme dir Einiges an Arbeit ab.",
         "text_en": "Hanna booked the \"Bytes Only\" package and received her own design as a website. I can also help you create your digital presence and take some of the work off your hands.",
-        "buttonText_de": "",
-        "buttonText_en": "",
+        "buttonText_de": "Mich kontaktieren (Email)",
+        "buttonText_en": "Contact me (email)",
+        "buttonLink": "mailto:afocke@pm.me",
         "buttonText1_de": "",
         "buttonText1_en": ""
       },
