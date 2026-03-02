@@ -23,8 +23,8 @@
   "logo": {
     "link": "/",
     "content": {
-      "text_de": "Adrian Focke",
-      "text_en": "Adrian Focke"
+      "text_de": "Tien Holz Design",
+      "text_en": "Tien Wood Design"
     },
     "settings": {
       "marginBottom": "0"
@@ -34,8 +34,8 @@
     {
       "link": "/about",
       "content": {
-        "text_de": "Über Mich",
-        "text_en": "About Me"
+        "text_de": "Werkstatt",
+        "text_en": "Workshop"
       },
       "settings": {
         "marginBottom": "0"
@@ -44,8 +44,18 @@
     {
       "link": "/stories",
       "content": {
-        "text_de": "Stories",
-        "text_en": "Stories"
+        "text_de": "Projekte",
+        "text_en": "Projects"
+      },
+      "settings": {
+        "marginBottom": "0"
+      }
+    },
+    {
+      "link": "/contact",
+      "content": {
+        "text_de": "Kontakt",
+        "text_en": "Contact"
       },
       "settings": {
         "marginBottom": "0"

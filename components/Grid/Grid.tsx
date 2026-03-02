@@ -18,12 +18,12 @@ export default function Component(props: PageBlocksGrid) {
         xl: props.settings?.columns_xl || "2",
       }}
       gap={{
-        initial: props.settings?.gap_initial || "0",
-        xs: props.settings?.gap_xs || "0",
-        sm: props.settings?.gap_sm || "0",
-        md: props.settings?.gap_md || "0",
-        lg: props.settings?.gap_lg || "0",
-        xl: props.settings?.gap_xl || "0",
+        initial: props.settings?.gap_initial || "1.5rem",
+        xs: props.settings?.gap_xs || "1.5rem",
+        sm: props.settings?.gap_sm || "1.5rem",
+        md: props.settings?.gap_md || "1.5rem",
+        lg: props.settings?.gap_lg || "1.5rem",
+        xl: props.settings?.gap_xl || "1.5rem",
       }}
     >
       {props.content?.items?.map((item, i) => (

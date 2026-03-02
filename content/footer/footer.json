@@ -1,4 +1,24 @@
 {
+  "links": [
+    {
+      "content": {
+        "text_de": "Instagram",
+        "text_en": "Instagram"
+      },
+      "settings": {
+        "marginBottom": "0"
+      }
+    },
+    {
+      "content": {
+        "text_de": "Email",
+        "text_en": "Email"
+      },
+      "settings": {
+        "marginBottom": "0"
+      }
+    }
+  ],
   "settings": {
     "marginX": "",
     "marginY": "",

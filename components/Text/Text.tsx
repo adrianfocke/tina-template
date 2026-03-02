@@ -32,6 +32,9 @@ export default function Component(props: PageBlocksText) {
       }
       style={{
         color: colorMap[props.settings?.textColor as any],
+        fontWeight: 300,
+        letterSpacing: "-0.01em",
+        lineHeight: 1.6,
       }}
     >
       {props.content?.[text] || "Add your text here"}
@@ -54,6 +57,11 @@ export default function Component(props: PageBlocksText) {
           href={props.link}
           target={isExternalLink ? "_blank" : undefined}
           rel={isExternalLink ? "noopener noreferrer" : undefined}
+          style={{
+            textDecoration: "underline",
+            textDecorationThickness: "0.02em",
+            textUnderlineOffset: "0.25em",
+          }}
         >
           {content} {isExternalLink && <ArrowTopRightIcon />}
         </Link>

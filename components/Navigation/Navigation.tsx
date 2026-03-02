@@ -53,7 +53,11 @@ export default function Navigation(props: NavigationQuery["navigation"]) {
             </Popover.Root>
           </Box>
 
-          <Flex display={{ initial: "none", md: "flex" }} direction={"row"}>
+          <Flex
+            display={{ initial: "none", md: "flex" }}
+            direction={"row"}
+            align={"center"}
+          >
             {props.links?.map((link, index) => {
               return <Text key={index} {...(link as any)} />;
             })}

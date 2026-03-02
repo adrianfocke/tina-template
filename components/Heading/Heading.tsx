@@ -26,7 +26,12 @@ export default function Component(props: PageBlocksHeading) {
             }
           : "9"
       }
-      style={{ color: colorMap[props.settings?.textColor as any] }}
+      style={{
+        color: colorMap[props.settings?.textColor as any],
+        fontWeight: 300,
+        letterSpacing: "-0.02em",
+        lineHeight: 1.3,
+      }}
     >
       {props.content?.[text] || "Add your heading here"}
     </Heading>

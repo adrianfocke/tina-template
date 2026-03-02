@@ -1,3 +1,3 @@
 module.exports = {
-  url: "adrianfocke.at" /* Configure for production */,
+  url: "tienholzdesign.at" /* Configure for production */,
 };
