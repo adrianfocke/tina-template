@@ -5,14 +5,22 @@
   "seo_de": {
     "title": "Hanna's Story",
     "metaDescription": "Hanna's Story ist voller Klarheit, Tiefe und Verbindung. Erfahre mehr über ihren Weg auf dieser Page.",
-    "metaKeywords": ["breathwork", "breath_and_growth", "breath and growth"]
+    "metaKeywords": [
+      "breathwork",
+      "breath_and_growth",
+      "breath and growth"
+    ]
   },
   "seo_en": {
     "title": "Hanna's Story",
     "metaDescription": "Hanna's story is full of clarity, depth, and connection. Learn more about her journey on this page.",
-    "metaKeywords": ["breathwork", "breath_and_growth", "breath and growth"]
+    "metaKeywords": [
+      "breathwork",
+      "breath_and_growth",
+      "breath and growth"
+    ]
   },
-  "image": "/uploads/hanna-min.png",
+  "image": "/uploads/breath-and-growth.png",
   "blocks": [
     {
       "content": {
@@ -44,7 +52,7 @@
     },
     {
       "content": {
-        "image": "/uploads/hanna-min.png"
+        "image": "/uploads/breath-and-growth.png"
       },
       "settings": {
         "marginBottom": "6"
