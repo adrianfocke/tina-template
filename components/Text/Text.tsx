@@ -35,6 +35,7 @@ export default function Component(props: PageBlocksText) {
         fontWeight: 300,
         letterSpacing: "-0.01em",
         lineHeight: 1.6,
+        whiteSpace: "pre-line",
       }}
     >
       {props.content?.[text] || "Add your text here"}
