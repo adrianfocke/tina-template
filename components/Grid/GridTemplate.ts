@@ -5,7 +5,6 @@ import {
   ExtraMarginBottomField,
   GapField,
   HasContainerField,
-  IsCardField,
   MarginXField,
   MarginYField,
   PaddingXField,
@@ -68,7 +67,6 @@ export default {
       label: "Settings",
       type: "object",
       fields: [
-        IsCardField,
         HasContainerField,
         ...createResponsiveField(GapField),
         ...createResponsiveField(ColumnsField),

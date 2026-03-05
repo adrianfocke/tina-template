@@ -14,6 +14,7 @@ export default function Component(props: PageBlocksText) {
   const text = findIntlValue(language, "text");
 
   const isExternalLink = props.link?.startsWith("http");
+  const showUnderline = (props as any).underline !== false;
 
   const content = (
     <Text
@@ -58,11 +59,15 @@ export default function Component(props: PageBlocksText) {
           href={props.link}
           target={isExternalLink ? "_blank" : undefined}
           rel={isExternalLink ? "noopener noreferrer" : undefined}
-          style={{
-            textDecoration: "underline",
-            textDecorationThickness: "0.02em",
-            textUnderlineOffset: "0.25em",
-          }}
+          style={
+            showUnderline
+              ? {
+                  textDecoration: "underline",
+                  textDecorationThickness: "0.02em",
+                  textUnderlineOffset: "0.25em",
+                }
+              : {}
+          }
         >
           {content} {isExternalLink && <ArrowTopRightIcon />}
         </Link>
