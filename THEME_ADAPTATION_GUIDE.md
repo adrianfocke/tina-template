@@ -82,11 +82,13 @@ Update the favicon files to match your brand identity:
 - Replace or create `app/icon.png` with your logo/favicon as a PNG (recommended: 192x192px minimum)
 
 The favicon appears in:
+
 - Browser tabs and bookmarks
 - Browser history
 - Address bar
 
 **Example:**
+
 ```bash
 # Replace existing favicon
 cp your-favicon.ico public/favicon.ico
