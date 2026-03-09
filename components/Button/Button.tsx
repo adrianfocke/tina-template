@@ -10,6 +10,7 @@ function Component(props: PageBlocksButton) {
   const language = useContext(LanguageContext);
   const text = findIntlValue(language, "text");
   const variant = props.settings?.variant ?? "classic";
+  const isExternalLink = props.link?.startsWith("http");
 
   const content = (
     <Button
@@ -37,7 +38,17 @@ function Component(props: PageBlocksButton) {
         textAlign: props.settings?.align as any,
       }}
     >
-      {props.link ? <Link href={props.link}>{content}</Link> : content}
+      {props.link ? (
+        <Link
+          href={props.link}
+          target={isExternalLink ? "_blank" : undefined}
+          rel={isExternalLink ? "noopener noreferrer" : undefined}
+        >
+          {content} {isExternalLink}
+        </Link>
+      ) : (
+        content
+      )}
     </Box>
   );
 }
