@@ -33,8 +33,7 @@ export default function Component(props: PageBlocksText) {
       style={{
         color: colorMap[props.settings?.textColor as any],
         fontWeight: 300,
-        letterSpacing: "-0.01em",
-        lineHeight: 1.6,
+        lineHeight: 1.2,
         whiteSpace: "pre-line",
       }}
     >
