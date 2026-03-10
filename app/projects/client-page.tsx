@@ -35,12 +35,52 @@ export default function ClientPage(props: ClientPageProps) {
       {pages && (
         <Grid
           content={{
-            items: pages.map((item) => ({
-              __typename: "PageBlocksGridContentItems",
-              image: item?.node?.image,
-              text: item?.node?.name,
-              link: "/projects/" + item?.node?._sys.filename,
-            })),
+            items: [
+              {
+                __typename: "PageBlocksGridContentItems" as const,
+                blocks: [
+                  {
+                    __typename:
+                      "PageBlocksGridContentItemsBlocksHeading" as const,
+                    content: {
+                      text_de: "Projekte",
+                      text_en: "Projects",
+                    },
+                  },
+                ],
+              },
+              ...pages.map((item) => ({
+                __typename: "PageBlocksGridContentItems" as const,
+                blocks: [
+                  {
+                    __typename:
+                      "PageBlocksGridContentItemsBlocksImage" as const,
+                    link: "/projects/" + item?.node?._sys.filename,
+                    content: {
+                      image: item?.node?.image,
+                      blocks: [
+                        {
+                          __typename:
+                            "PageBlocksGridContentItemsBlocksImageContentBlocksText" as const,
+                          content: {
+                            text_en: item?.node?.name || "",
+                            text_de: item?.node?.name || "",
+                          },
+                        },
+                      ],
+                    },
+                    settings: {
+                      aspectRatio_initial: "1/1",
+                      aspectRatio_xs: "1/1",
+                      aspectRatio_sm: "1/1",
+                      aspectRatio_md: "1/1",
+                      aspectRatio_lg: "1/1",
+                      aspectRatio_xl: "1/1",
+                    },
+                  },
+                ],
+              })),
+            ],
           }}
           settings={{
             columns_initial: "1",
