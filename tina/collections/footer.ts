@@ -1,10 +1,5 @@
 import type { Collection } from "tinacms";
-import {
-  MarginXField,
-  MarginYField,
-  PaddingXField,
-  PaddingYField,
-} from "../templating/granular-fields";
+import { PaddingXField, PaddingYField } from "../templating/granular-fields";
 import TextTemplate from "../../components/Text/TextTemplate";
 
 export default {
@@ -24,7 +19,7 @@ export default {
       name: "settings",
       label: "Settings",
       type: "object",
-      fields: [MarginXField, MarginYField, PaddingXField, PaddingYField],
+      fields: [PaddingXField, PaddingYField],
     },
   ],
   ui: {

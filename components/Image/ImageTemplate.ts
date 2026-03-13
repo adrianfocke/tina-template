@@ -2,14 +2,13 @@ import type { Template } from "tinacms";
 import {
   AspectRatioField,
   AlignField,
-  MarginXField,
-  MarginYField,
   PaddingXField,
   PaddingYField,
   LinkField,
   BlocksPositionField,
   ExtraMarginBottomField,
   HasContainerField,
+  ExtraMarginTopField,
 } from "../../tina/templating/granular-fields";
 import HeadingTemplate from "../Heading/HeadingTemplate";
 import TextTemplate from "../Text/TextTemplate";
@@ -55,8 +54,7 @@ export default {
         ...createResponsiveField(AspectRatioField),
         HasContainerField,
         AlignField,
-        MarginXField,
-        MarginYField,
+        ExtraMarginTopField,
         ExtraMarginBottomField,
         PaddingXField,
         PaddingYField,

@@ -3,8 +3,6 @@ import { createIntlField } from "../../tina/templating/special-fields";
 import {
   AlignField,
   TextSizeField,
-  MarginXField,
-  MarginYField,
   PaddingXField,
   PaddingYField,
   HasContainerField,
@@ -13,6 +11,7 @@ import {
   ExtraMarginBottomField,
   ExtraPaddingWhenInGridField,
   IDField,
+  ExtraMarginTopField,
 } from "../../tina/templating/granular-fields";
 
 export default {
@@ -43,8 +42,7 @@ export default {
         TextSizeField,
         TextColorField,
         FontField,
-        MarginXField,
-        MarginYField,
+        ExtraMarginTopField,
         ExtraMarginBottomField,
         PaddingXField,
         PaddingYField,

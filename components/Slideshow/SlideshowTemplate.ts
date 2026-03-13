@@ -2,8 +2,7 @@ import type { Template } from "tinacms";
 import ImageTemplate from "../Image/ImageTemplate";
 import {
   ExtraMarginBottomField,
-  MarginXField,
-  MarginYField,
+  ExtraMarginTopField,
   PaddingXField,
   PaddingYField,
 } from "../../tina/templating/granular-fields";
@@ -56,8 +55,7 @@ export default {
           options: ["4", "5", "6", "7", "8", "9", "10"],
         },
         { name: "hasControls", label: "Show Controls", type: "boolean" },
-        MarginXField,
-        MarginYField,
+        ExtraMarginTopField,
         ExtraMarginBottomField,
         PaddingXField,
         PaddingYField,

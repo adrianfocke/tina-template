@@ -6,8 +6,6 @@ import {
 import {
   AlignField,
   TextSizeField,
-  MarginXField,
-  MarginYField,
   PaddingXField,
   PaddingYField,
   HasContainerField,
@@ -17,6 +15,7 @@ import {
   ExtraPaddingWhenInGridField,
   IDField,
   DirectionField,
+  ExtraMarginTopField,
 } from "../../tina/templating/granular-fields";
 
 export default {
@@ -68,8 +67,7 @@ export default {
         TextSizeField,
         TextColorField,
         FontField,
-        MarginXField,
-        MarginYField,
+        ExtraMarginTopField,
         ExtraMarginBottomField,
         PaddingXField,
         PaddingYField,

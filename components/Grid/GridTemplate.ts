@@ -3,10 +3,9 @@ import ImageTemplate from "../Image/ImageTemplate";
 import {
   ColumnsField,
   ExtraMarginBottomField,
+  ExtraMarginTopField,
   GapField,
   HasContainerField,
-  MarginXField,
-  MarginYField,
   PaddingXField,
   PaddingYField,
 } from "../../tina/templating/granular-fields";
@@ -69,8 +68,7 @@ export default {
         HasContainerField,
         ...createResponsiveField(GapField),
         ...createResponsiveField(ColumnsField),
-        MarginXField,
-        MarginYField,
+        ExtraMarginTopField,
         ExtraMarginBottomField,
         PaddingXField,
         PaddingYField,

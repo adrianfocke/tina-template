@@ -64,13 +64,6 @@ export const AlignField: Template["fields"][number] = {
   options: ["left", "center", "right"],
 };
 
-export const MarginXField: Template["fields"][number] = {
-  name: "marginX",
-  label: "Horizontal Margin Size",
-  type: "string",
-  options: [...radixUnits],
-};
-
 export const ExtraMarginBottomField: Template["fields"][number] = {
   name: "marginBottom",
   label: "Alternating Bottom Margin Size",
@@ -78,9 +71,9 @@ export const ExtraMarginBottomField: Template["fields"][number] = {
   options: [...radixUnits],
 };
 
-export const MarginYField: Template["fields"][number] = {
-  name: "marginY",
-  label: "Vertical Margin Size",
+export const ExtraMarginTopField: Template["fields"][number] = {
+  name: "marginTop",
+  label: "Alternating Top Margin Size",
   type: "string",
   options: [...radixUnits],
 };

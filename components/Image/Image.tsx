@@ -56,8 +56,7 @@ export default function Component(props: PageBlocksImage) {
 
   const box = (
     <Box
-      mx={props.settings?.marginX ?? "0"}
-      my={props.settings?.marginY ?? "0"}
+      mt={props.settings?.marginTop ?? "inherit"}
       mb={props.settings?.marginBottom ?? "inherit"}
       px={props.settings?.paddingX ?? "0"}
       py={props.settings?.paddingY ?? "0"}
